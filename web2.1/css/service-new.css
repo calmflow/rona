@@ -1,0 +1,58 @@
+#service{position: relative; padding: 150px 0 150px 0; background-color: #6200ee; display: flex; flex-direction: column; align-items: center;}
+#service>h2, #service h3{font-size: 2.5vw;font-family: 'Montserrat', sans-serif; color: #FFF;}
+#service>h2{animation: moveInLeft ease-in-out 0.9s; animation-fill-mode: forwards;}
+#service h3{font-size: 1.2vw; margin-bottom: 100px; animation: moveInRight ease-in-out 0.9s; animation-fill-mode: forwards;}
+#service .service_list{width: 92%; max-width: 1440px; display: flex; justify-content:center; flex-wrap: wrap;}
+#service .service_list>li button{font-size: 1em;  color:#FFF; text-align: center; background: none; padding: 10px; border: 2px solid #FFF; display: flex;  align-items: center; margin: 0 10px;  border-radius:26px ; cursor: pointer; transition-duration: 0.5s;}
+#service .service_list>li.select button{background-color: #FFF; color: #6200ee; border-color: #5303c4;}
+#service .service_list>li p{font-size: 1em;color:#FFF; text-align: justify;}
+
+
+.service_view{position: relative; padding: 50px 0;}
+.service_resiponsive{position: relative ; width: 1200px; margin: 0 auto; border: 10px solid #5303c4; background-color: #FFF; height: 650px; overflow: hidden; border-radius: 30px;}
+.service_resiponsive .service_header{position: relative; height: 80px; display: flex; justify-content: space-between; align-items: center; transition-duration: 1s;}
+.service_resiponsive .service_header img{height: 35px;}
+.service_resiponsive .service_header button{background: none; border: none;}
+.service_resiponsive .service_topbanner{position: relative;}
+.service_resiponsive .service_topbanner h4{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: #000; text-align: center; font-size: 1.6em; transition-duration: 0.5s ;}
+.service_resiponsive .service_topbanner img{width: 100%;}
+.service_resiponsive .service_product{position: relative;}
+.service_resiponsive .service_product h2{font-size: 0.9em; text-align: center; margin: 20px auto;}
+.service_resiponsive .service_product ul{display: flex; justify-content: space-between; flex-wrap: wrap; width: 84%; margin: 0 auto;}
+.service_resiponsive .service_product ul li{width: 24%; margin-bottom: 2%; transition-duration: 1s; }
+.service_resiponsive .service_product ul li img{width: 100%;}
+
+
+.service_shop{position: relative ; width: 1200px; margin: 0 auto; border: 10px solid #5303c4; background-color: #FFF; height: 650px; overflow: hidden; border-radius: 30px; display: none;}
+.service_shop .service_shop_header{position: relative; height: 80px; display: flex; justify-content: space-between; align-items: center; transition-duration: 1s; border-bottom: 1px solid #EEE;}
+.service_shop .service_shop_header img{height: 35px;}
+.service_shop .service_shop_header button{background: none; border: none;}
+.service_shop .service_shop_header input[type=text]{width: 40%; height: 35px; border-radius:28px; border: 1px solid #999;}
+.service_shop .service_topbanner{position: relative;}
+.service_shop .service_topbanner img{width: 100%;}
+.service_shop .service_shop_list{display: flex; width: 92%; margin: 30px auto; justify-content: space-between;}
+.service_shop .service_shop_list h2{font-size: 2em; line-height: 1em; font-weight: bold;}
+.service_shop .service_shop_list ul{display: flex; justify-content: space-between; flex-wrap: wrap; width: 80%;}
+.service_shop .service_shop_list ul li{width: 18%;}
+.service_shop .service_shop_list ul li img{width: 100%;}
+.service_management{position: relative ; width: 1200px; margin: 0 auto; border: 10px solid #5303c4; background-color: #FFF; height: 650px; overflow: hidden; border-radius: 30px; display: none; }
+.service_management h4{color: #000; font-size: 1.4vw; margin-bottom: 1.4vw;}
+.service_management .service_management_inner{ width: 100%; display: flex; background-color: #eee;}
+.service_management_inner .service_management_list{width: 30%; background-color: #fff; border-radius: 10px; margin-top: 1.4vw;}
+
+@keyframes moveInLeft { 
+    0% { opacity: 0; transform: translateX(-10rem); } 
+    80% { transform: translateX(1rem); } 
+    100% { opacity: 1; transform: translateX(0); } 
+    }
+   
+   @keyframes moveInRight { 
+    0% { opacity: 0; transform: translateX(10rem); } 
+    80% { transform: translateX(-1rem); } 
+    100% { opacity: 1; transform: translateX(0); } 
+    }
+   
+   @keyframes moveInBottom { 
+    0% { opacity: 0; transform: translateY(3rem); } 
+    100% { opacity: 1; transform: translateX(0); } 
+    }

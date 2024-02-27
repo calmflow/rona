@@ -1,0 +1,42 @@
+#header{position: fixed; left: 0; top: 0; width: 100%; height: 50px; z-index: 999; transition-duration: 0.5s;}
+#header .top_logo{position: absolute; left: 4%; top: 0; width: 180px; height: 50px; color: rgba(0,0,0,0); }
+#header .top_logo img{height: 50px;}
+#header .gnb{position: absolute; right: 4%; top:50%; transform: translateY(-50%);}
+#header .gnb ul{display:flex;  align-items: center;}
+#header .gnb ul a{font-size: 14px; font-family: 'Montserrat', sans-serif; line-height: 20px; color: #222; padding: 0 10px;}
+#header .gnb_btn{display: none;}
+
+#header.b_bg{background-color: #000;}
+#header.b_bg a{color: #000;}
+#header.dark_bg{background-color: rgba(255,255,255,0.8);}
+
+
+#footer{position: relative; padding: 20px 0; background-color: #222; display: flex; justify-content: center; align-items: center;}
+#footer address{font-style: normal; color: #FFF; font-size: 14px; line-height: 1.2em; margin-left: 50px;}
+#footer address span{font-weight: bold;}
+#footer address.mob{display: none;}
+
+@media screen and (max-width:800px) {
+#header{position: fixed; left: 0; top: 0; width: 100%; height: 50px; z-index: 999;}
+#header .top_logo{position: absolute; left: 4%; top: 0; }
+
+
+#header .gnb_btn{position: absolute; left: auto; right:4%; top:9px; width: 30px; height: 30px; background: none; border: none; display: block;  cursor: pointer;}
+#header .gnb_btn span{position: absolute; width: 30px; height: 2px; background-color: #222; display: block; left: 0%; top: 50%; transition-duration: 0.5s;}
+#header .gnb_btn span:first-child{transform: translateY(-5px) rotate(0);}
+#header .gnb_btn span:last-child{transform: translateY(5px) rotate(0);}
+
+#header .gnb{position: fixed; right: 3%; top: 60px; display: none; background-color: #000; transform: translateY(0);}
+#header .gnb ul{display:flex; flex-direction: column;  align-items: flex-end;}
+#header .gnb ul a{font-size: 18px; font-family: 'Montserrat', sans-serif; line-height: 40px; color: #EEE; }
+
+
+#header.b_bg{background-color: #000;}
+#header.b_bg a{color: #000;}
+
+#footer{position: relative; padding: 20px 0; background-color: #5303c4; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+#footer h1{display: none;}
+#footer address{display: none;}
+#footer address.mob{display: block; font-style: normal; color: #FFF; font-size: 0.8em; line-height: 1.3em; margin-left: 0; padding: 0 10px; text-align: center;}
+#footer address span{font-weight: bold;}
+}

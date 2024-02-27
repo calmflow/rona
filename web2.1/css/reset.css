@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Noto+Sans+KR&display=swap');
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans KR', sans-serif; */
+
+/* 초기화 */
+*{margin:0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+img{display: block; border: none;}
+a:link, a:visited{text-decoration: none; display: block;}
+h1,h2,h3,h4,h5,h6,body,section,header,nav,footer,div,ul,ol,li,tr,td,p,a,button,address,select,option,input,label,textarea{
+    font-family: 'SUIT-Regular';
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 1.7; 
+}

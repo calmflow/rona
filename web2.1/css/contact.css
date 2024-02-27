@@ -1,0 +1,169 @@
+/* ■■■■■■■■■■■■■■■■■■■■ contact ■■■■■■■■■■■■■■■■■■■■ */
+
+#contact { position: relative; background-color: #fff; padding: 150px 150px 120px 150px; transition: all .3s; overflow: hidden;}
+#contact .bg-box{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+#contact .bg-box video{width: 100%; height: 100%; opacity: .5; object-fit: cover;}
+
+#contact .info-box { position: relative; width: 920px; background-color: rgba(255, 255, 255, 0.88); margin: 0 auto; padding: 20px 60px; border-radius: 20px;
+    transition: all .3s;}
+#contact .info-box .heading-box{position: relative; margin-bottom: 65px;}
+#contact .info-box .heading-box .heading-primary, #contact .heading-box .heading-primary-sub{position: relative; text-align: center;}
+#contact .info-box .heading-box .heading-primary{font-size: 2.5vw; font-family: 'Montserrat', sans-serif; animation: moveInLeft ease-in-out 0.9s; animation-fill-mode: forwards;}
+#contact .heading-box .heading-primary-sub{animation: moveInRight ease-in-out 0.9s; animation-fill-mode: forwards;}
+
+#contact .info-box .info-default, #contact .info-box .info-user-input, #contact .info-box .agreement-box{
+    animation: moveInBottom linear .3s .9s; animation-fill-mode: forwards; opacity: 0;
+}
+/* 신상정보 */
+#contact .info-box .info-default .info-default--personal { display: flex; justify-content: flex-start; padding: 5px 0; margin-bottom: 20px; } 
+#contact .info-box .info-default .info-default--personal label { display: flex; width: 4em; margin-right: 3rem; align-items: center; } 
+#contact .info-box .info-default .info-default--personal input { display: flex; background-color: #fff; padding: 5px;
+ border:none; border-bottom: 3px solid transparent; border-radius: 3px; width: 70%; outline: none;}
+#contact .info-box .info-default .info-default--personal input:focus:invalid{border-bottom: 3px solid orangered;}
+#contact .info-box .info-default .info-default--personal input:focus{border-bottom: 3px solid #6200ee;}
+
+/* placeholder 스타일 변경 */
+#contact .info-box .info-default .info-default--personal input::placeholder { font-size: 14px; color: #aaa; font-style: italic;} 
+#contact .info-box .info-user-input textarea::placeholder { font-size: 14px; color: #bbb; font-style: italic; }
+
+/* 문의분야 */
+#contact .info-box .info-default .purpose{display: inline-block; margin-bottom: 20px;}
+#contact .info-box .info-default .info-default--purpose{display: flex; transition-duration: .3s;}
+#contact .info-box .info-default .info-default--purpose-box { line-height: 3; margin-bottom: 20px; display: flex; align-items: center; transition-duration: .3s;}
+#contact .info-box .info-default .info-default--purpose-box label{ margin-right: 15px; cursor: pointer;}
+
+/* 라디오버튼 커스텀 */
+input[type='radio'] { accent-color: #6200ee; margin-right: 10px;}
+
+/* 문의내용입력*/
+#contact .info-box .info-user-input label {line-height: 3; } 
+#contact .info-box .info-user-input textarea { display: block; width: 100%; border-radius: 20px; padding: 2%; overflow: auto; resize:none; color: #000;
+    border: 1px solid #777; border-radius: 10px; outline: none; border: 2px solid transparent;}
+#contact .info-box .info-user-input textarea:focus{border: 2px solid #6200ee;}
+
+/* 개인정보수집방침 */
+#contact .info-box .agreement-box { position: relative; margin-top: 20px;} 
+#contact .info-box .agreement-box .agreement_title { margin-bottom: 20px;} 
+#contact .info-box .agreement-box .agreement_title span {color: red;} 
+
+/* 약관내용 */
+#contact .info-box .agreement-box .agreement_content { position: relative; width: 100%; height: 120px; color: #000; background-color: #fff; 
+    padding: 1%; margin-bottom: 20px; overflow: auto; border: 1px solid #eee;} 
+#contact .info-box .agreement-box .agreement_check { line-height: 3; display: flex; align-items: flex-start; flex-direction: column; height: 100px; padding: 0 0.2rem;} 
+#contact .info-box .agreement-box .agreement_check .check_inner {display: flex; align-items: center;} 
+#contact .info-box .agreement-box .agreement_check .check_inner label{cursor: pointer;}
+#contact .info-box .agreement-box .agreement_check .check_inner input[type='checkbox'] { accent-color: #6200ee; margin-right: 10px; } 
+#contact .info-box .agreement-box input[type="submit"] {display: block; font-size: 14px; font-weight: 500; font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0, 0, 0, 0); color: #000; border: 1px solid #000; padding: 2px 8px; border-radius: 10px; margin-left: auto; margin-top: 10px;} 
+#contact .info-box .agreement-box input[type="submit"]:hover { background-color: #6200ee; color: #fff; border-color: #6200ee;} 
+#contact .info-box .agreement-box input[type="submit"]:active { transform: translateY(2px);}
+
+
+
+@media screen and (max-width:1200px) {
+#contact { padding: 7em 5em 4em 5em}
+#contact .info-box { width: 98%; padding: 1em 2.5em; border-radius: 1.2em;}
+#contact .info-box .heading-box{margin-bottom: 3.5em;}
+#contact .info-box .heading-box .heading-primary{font-size: 2em;}
+
+/* 신상정보 */
+#contact .info-box .info-default .info-default--personal { display: flex; justify-content: flex-start; padding: .5em 0; margin-bottom: 1.1em; }
+#contact .info-box .info-default .info-default--personal label { display: flex; width: 3.8em; margin-right: 1.8em; align-items: center; } 
+#contact .info-box .info-default .info-default--personal input { display: flex; background-color: #fff; padding: 5px;
+ border:none; border-bottom: 3px solid transparent; border-radius: 3px; font-size: 1em; width: 70%; outline: none;}
+
+/* placeholder 스타일 변경 */
+#contact .info-box .info-default .info-default--personal input::placeholder { font-size: 1em;} 
+#contact .info-box .info-user-input textarea::placeholder { font-size: 1em;}
+
+/* 문의분야 */
+#contact .info-box .info-default .info-default--purpose { line-height: 3; margin-bottom: 1.1em;}
+#contact .info-box .info-default .info-default--purpose-box {margin-bottom: 1em;}
+#contact .info-box .info-default .info-default--purpose-box label{font-size: 1em;  margin-right: .5em;}
+
+/* 라디오버튼 커스텀 */
+input[type='radio'] { margin-right: .5em;}
+
+/* 문의내용입력*/
+#contact .info-box .info-user-input label {line-height: 3; } 
+#contact .info-box .info-user-input textarea { padding: .8em; font-size: 1em;  border-radius: .5em; }
+
+#contact .info-box .agreement-box .agreement_content { position: relative; width: 100%; height: 7em; font-size: .9em; color: #000; background-color: #fff; 
+    padding: .2em; margin-bottom: 1.1em; overflow: auto; border: 1px solid #eee;} 
+
+/* 개인정보수집방침 */
+#contact .info-box .agreement-box { margin-top: 1em;} 
+#contact .info-box .agreement-box .agreement_title { font-size: 1em; margin-bottom: 1em;} 
+#contact .info-box .agreement-box .agreement_check .check_inner label{font-size: 1em; cursor: pointer;}
+
+#contact .info-box .agreement-box input[type="submit"] {font-size: .9em;}
+}
+
+
+@keyframes moveInLeft { 
+0% { opacity: 0; transform: translateX(-10rem); } 
+80% { transform: translateX(1rem); } 
+100% { opacity: 1; transform: translateX(0); } 
+}
+
+@keyframes moveInRight { 
+0% { opacity: 0; transform: translateX(10rem); } 
+80% { transform: translateX(-1rem); } 
+100% { opacity: 1; transform: translateX(0); } 
+}
+
+@keyframes moveInBottom { 
+0% { opacity: 0; transform: translateY(3rem); } 
+100% { opacity: 1; transform: translateX(0); } 
+}
+
+@media screen and (max-width:900px) {
+#contact .info-box .info-default .info-default--personal label { font-size: .9em; width: 3.5em; margin-right: 1.5em;} 
+#contact .info-box .info-default .info-default--personal input { font-size: .9em; width: 70%; outline: none;}
+#contact .info-box .info-default .info-default--purpose { display: flex; width: 60%; flex-wrap: wrap;}
+
+#contact .info-box .info-user-input textarea{font-size: .9em;}
+
+#contact .info-box .agreement-box input[type="submit"] {font-size: .8em;}
+}
+
+@media screen and (max-width:800px) {
+#contact .info-box .info-default .info-default--purpose { display: flex; width: 60%; flex-wrap: wrap;}
+}
+
+@media screen and (max-width:650px) {
+#contact { padding: 6em 3em 3em 3em}
+
+#contact .info-box .info-default .info-default--personal label { font-size: .9em; width: 3em; margin-right: 1.2em;}
+#contact .info-box .info-default .info-default--personal input { font-size: .8em; width: 90%;}
+
+#contact .info-box .info-default .info-default--purpose {width: 100%;}
+}
+
+@media screen and (max-width:480px) {
+#contact { padding: 6em 2em 3em 2em}
+#contact .info-box .heading-box .heading-primary-sub{font-size: .9em; width: 85%; margin: 0 auto;}
+
+#contact .info-box .info-default .info-default--personal { display: block; justify-content: flex-start; padding: 0; margin-bottom: 1.1em; }
+#contact .info-box .info-default .info-default--personal label { display: flex; width: 3.8em; margin-right: 1.8em; align-items: center; }
+#contact .info-box .info-default .info-default--personal input { font-size: .8em; width: 100%;}
+}
+
+@media screen and (max-width:360px) {
+#contact { padding: 6em 1.5em 3em 1.5em}
+#contact .info-box { width: 96%; padding: 1em 2em; border-radius: 1em;}
+#contact .info-box .heading-box{margin-bottom: 1.5em;}
+#contact .info-box .heading-box .heading-primary{font-size: 1.5em; animation: moveInBottom 0.8s; animation-fill-mode: forwards; opacity: 0;}
+#contact .info-box .heading-box .heading-primary-sub{display: none;}
+
+#contact .info-box .info-default .info-default--purpose-box {margin-bottom: .8em;}
+#contact .info-box .info-default .info-default--purpose {width: 80%; line-height: 2; margin-bottom: 0;}
+#contact .info-box .info-default .info-default--purpose-box label{font-size: .9em;  margin-right: .5em;}
+
+#contact .info-box .agreement-box .agreement_title { font-size: .9em; margin-bottom: .9em;} 
+
+#contact .info-box .agreement-box .agreement_check .check_inner {align-items: center;} 
+#contact .info-box .agreement-box .agreement_check .check_inner label{font-size: .9em;}
+
+#contact .info-box .agreement-box input[type="submit"] {font-size: .7em;}
+}

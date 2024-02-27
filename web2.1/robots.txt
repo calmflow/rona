@@ -1,0 +1,3 @@
+User-agent: *
+Allow:/
+Sitemap: http://djain.co.kr/sitemap.xml

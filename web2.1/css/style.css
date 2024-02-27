@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'SUIT-Regular';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+li {
+  list-style: none; }
+
+img {
+  display: block;
+  border: none; }
+
+a:link,
+a:visited {
+  text-decoration: none;
+  display: block; }
+
+body {
+  font-family: "SUIT-Regular", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  box-sizing: border-box; }
+
+.title {
+  background-color: #6200ee;
+  font-family: "S-CoreDream-3Light";
+  text-align: center;
+  padding: 10rem 0; }
+
+.heading-primary--main-normal {
+  font-size: 5rem;
+  color: #ffffff; }
+
+.heading-primary--main-yellow {
+  font-size: 5rem;
+  color: #ffd500; }
+
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  color: #ffffff;
+  letter-spacing: 0.1rem; }
+
+.intro {
+  display: flex;
+  justify-content: center;
+  background-color: #f0e9fb;
+  padding: 10rem; }
+  .intro .text-box .heading-secondary {
+    font-size: 2.4rem;
+    font-family: 'S-CoreDream-3Light';
+    margin-bottom: 2rem; }
+  .intro .text-box .text {
+    font-size: 1.8rem; }
+  .intro .img-box__item {
+    width: 50rem; }
+    .intro .img-box__item img {
+      width: 100%; }
+
+.main-content {
+  background-color: #6200ee;
+  padding-top: 13rem; }
+  .main-content .banner {
+    padding: 8rem 0;
+    color: #ffffff;
+    background-color: #3c0092;
+    text-align: center;
+    position: relative; }
+    .main-content .banner .heading-secondary--main {
+      font-family: "S-CoreDream-3Light";
+      letter-spacing: 0.1rem;
+      font-size: 2.2rem;
+      font-weight: 600;
+      position: relative; }
+      .main-content .banner .heading-secondary--main::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 15rem;
+        height: 30rem;
+        top: -600%;
+        right: -45%;
+        background-image: url(../img/main-content.png);
+        background-size: contain;
+        background-repeat: no-repeat; }
+    .main-content .banner .heading-secondary--sub {
+      font-weight: 300;
+      display: block; }
+  .main-content .item-box {
+    padding: 6rem;
+    text-align: center;
+    color: #ffffff; }
+    .main-content .item-box .heading-secondary {
+      font-family: "S-CoreDream-3Light";
+      font-size: 2.2rem;
+      letter-spacing: 0.1rem;
+      margin-bottom: 5rem; }
+    .main-content .item-box .item-list {
+      display: flex;
+      justify-content: space-between;
+      max-width: 100rem;
+      margin: 0 auto; }
+      .main-content .item-box .item-list__item {
+        width: 23.5%;
+        text-align: left;
+        background-color: #ffffff;
+        color: #6200ee;
+        border-radius: 2rem;
+        padding: 2rem; }
+      .main-content .item-box .item-list__img {
+        width: 40%;
+        margin-bottom: 1rem; }
+      .main-content .item-box .item-list__title {
+        font-size: 2rem;
+        font-family: "S-CoreDream-3Light"; }
+      .main-content .item-box .item-list__text {
+        font-size: 1.5rem; }
+
+.cost {
+  padding: 8rem;
+  text-align: center; }
+  .cost .heading-secondary--main-purple {
+    font-family: "S-CoreDream-3Light";
+    font-size: 2.2rem;
+    color: #3c0092;
+    letter-spacing: 0.1rem; }
+  .cost .heading-secondary--main-bg {
+    font-family: "S-CoreDream-3Light";
+    font-size: 2.2rem;
+    color: #ffffff;
+    letter-spacing: 0.1rem;
+    background-color: #3c0092;
+    padding: 0.1rem 0.5rem; }
