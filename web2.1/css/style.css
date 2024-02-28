@@ -183,7 +183,8 @@ body {
     background-color: #ffffff;
     color: #6200ee;
     border-radius: 2rem;
-    padding: 2rem; }
+    padding: 2rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3); }
   .main-content-1__item-img {
     width: 40%;
     margin-bottom: 1rem; }
@@ -213,10 +214,12 @@ body {
       padding: 0.1rem 0.5rem; }
   .main-content-2__container {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
   .main-content-2__list-border--white {
     border-radius: 1rem;
-    border: 0.5rem solid #ffffff; }
+    border: 0.5rem solid #ffffff;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3); }
   .main-content-2__list-border--light-purple {
     border-radius: 1rem;
     border: 0.5rem solid #eadcff; }
@@ -236,9 +239,19 @@ body {
     color: #6200ee;
     margin: 1rem auto; }
   .main-content-2__list--gray {
-    padding: 2rem;
-    border-radius: 1rem;
-    background-color: #eeeeee; }
+    padding: 2.5rem;
+    background-color: #eeeeee;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3); }
+  .main-content-2__list-title--gray {
+    font-size: 2rem;
+    font-family: "SCoreDream", sans-serif;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 1rem; }
+  .main-content-2__list-item--gray {
+    font-size: 1.6rem;
+    color: #444;
+    margin: 1rem auto; }
   .main-content-2__img-wrap {
     width: 6rem;
     align-self: center;
