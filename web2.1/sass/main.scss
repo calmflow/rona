@@ -1,24 +1,13 @@
-@font-face {
-    font-family: 'SUIT-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'S-CoreDream-3Light';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+@import 'base/animations';
 
-$color-primary: #6200ee;
-$color-secondary: #f0e9fb;
-$coror-thirdly: #3c0092;
-$color-white: #ffffff;
-$color-yellow: #ffd500;
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/fucntions';
 
-$font-family-suit: 'SUIT-Regular', sans-serif;
-$font-family-score: 'S-CoreDream-3Light';
+@import 'components/button';
 
 *,
 *::after,
@@ -58,145 +47,211 @@ body {
     background-color: $color-primary;
     font-family: $font-family-score;
     text-align: center;
-    padding: 10rem 0;
-}
+    padding: 10rem 0 5rem 0;
 
-.heading-primary {
-    &--main-normal {
-        font-size: 5rem;
-        color: $color-white;
-    }
+    &__heading-primary {
+        font-weight: 600;
 
-    &--main-yellow {
-        font-size: 5rem;
-        color: $color-yellow;
-    }
+        &--main-normal {
+            font-size: 5rem;
+            color: $color-white;
+        }
 
-    &--sub {
-        display: block;
-        font-size: 2rem;
-        color: $color-white;
-        letter-spacing: 0.1rem;
+        &--main-yellow {
+            font-size: 5rem;
+            color: $color-yellow;
+        }
+
+        &--sub {
+            display: block;
+            font-size: 2rem;
+            font-weight: 500;
+            color: $color-white;
+            letter-spacing: 0.1rem;
+        }
     }
 }
 
 .intro {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: $color-secondary;
     padding: 10rem;
-    & .text-box {
-        & .heading-secondary {
-            font-size: 2.4rem;
-            font-family: 'S-CoreDream-3Light';
-            margin-bottom: 2rem;
-        }
 
-        & .text {
-            font-size: 1.8rem;
-        }
+    &__heading-secondary {
+        font-size: 2.6rem;
+        font-family: $font-family-score;
+        font-weight: 500;
+        margin-bottom: 2rem;
     }
 
-    & .img-box {
-        &__item {
-            width: 50rem;
-            & img {
-                width: 100%;
-            }
-        }
+    &__description {
+        font-size: 2rem;
+    }
+
+    &__img-wrap {
+        width: 40rem;
+    }
+
+    &__img {
+        width: 100%;
     }
 }
 
-.main-content {
+.main-content-1 {
     background-color: $color-primary;
     padding-top: 13rem;
-    & .banner {
+
+    &__banner {
         padding: 8rem 0;
         color: $color-white;
-        background-color: $coror-thirdly;
+        background-color: $dark-purple;
         text-align: center;
         position: relative;
-        & .heading-secondary {
-            &--main {
-                font-family: $font-family-score;
-                letter-spacing: 0.1rem;
-                font-size: 2.2rem;
-                font-weight: 600;
-                position: relative;
-                &::after {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    width: 15rem;
-                    height: 30rem;
-                    top: -600%;
-                    right: -45%;
-                    background-image: url(../img/main-content.png);
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                }
-            }
-            &--sub {
-                font-weight: 300;
+    }
+
+    &__banner-message {
+        &--main {
+            font-family: $font-family-score;
+            letter-spacing: 0.1rem;
+            font-size: 2.2rem;
+            font-weight: 500;
+            position: relative;
+            &::after {
+                content: '';
                 display: block;
+                position: absolute;
+                width: 15rem;
+                height: 30rem;
+                top: -600%;
+                right: -45%;
+                background-image: url(../img/main-content.png);
+                background-size: contain;
+                background-repeat: no-repeat;
             }
         }
+        &--sub {
+            font-weight: 300;
+            display: block;
+        }
     }
-    & .item-box {
+
+    &__container {
         padding: 6rem;
         text-align: center;
         color: $color-white;
-        & .heading-secondary {
-            font-family: $font-family-score;
-            font-size: 2.2rem;
-            letter-spacing: 0.1rem;
-            margin-bottom: 5rem;
-        }
-        & .item-list {
-            display: flex;
-            justify-content: space-between;
-            max-width: 100rem;
-            margin: 0 auto;
-            &__item {
-                width: 23.5%;
-                text-align: left;
-                background-color: $color-white;
-                color: $color-primary;
-                border-radius: 2rem;
-                padding: 2rem;
-            }
-            &__img {
-                width: 40%;
-                margin-bottom: 1rem;
-            }
-            &__title {
-                font-size: 2rem;
-                font-family: $font-family-score;
-            }
-            &__text {
-                font-size: 1.5rem;
-            }
-        }
+    }
+
+    &__title {
+        font-family: $font-family-score;
+        font-size: 2.2rem;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        margin-bottom: 5rem;
+    }
+
+    &__item-list {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100rem;
+        margin: 0 auto;
+    }
+
+    &__item {
+        width: 23.5%;
+        text-align: left;
+        background-color: $color-white;
+        color: $color-primary;
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+    &__item-img {
+        width: 40%;
+        margin-bottom: 1rem;
+    }
+    &__item-title {
+        font-size: 1.8rem;
+        font-family: $font-family-score;
+    }
+    &__item-description {
+        font-size: 1.5rem;
     }
 }
 
-.cost {
+.main-content-2 {
     padding: 8rem;
     text-align: center;
-    & .heading-secondary {
-        &--main-purple {
+    background-color: $color-secondary;
+
+    &__title {
+        margin-bottom: 5rem;
+
+        &--normal {
             font-family: $font-family-score;
             font-size: 2.2rem;
-            color: $coror-thirdly;
+            color: $dark-purple;
             letter-spacing: 0.1rem;
         }
-        &--main-bg {
+        &--bg {
             font-family: $font-family-score;
             font-size: 2.2rem;
             color: $color-white;
             letter-spacing: 0.1rem;
-            background-color: $coror-thirdly;
+            background-color: $dark-purple;
             padding: 0.1rem 0.5rem;
         }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__list-border--white {
+        border-radius: 1rem;
+        border: 0.5rem solid $color-white;
+    }
+
+    &__list-border--light-purple {
+        border-radius: 1rem;
+        border: 0.5rem solid $light-purple;
+    }
+
+    &__list--purple {
+        padding: 2rem 3rem;
+        border-radius: 1rem;
+        background-color: $color-white;
+        border: 0.5rem solid $vivid-purple;
+    }
+
+    &__list-title--purple {
+        font-size: 2rem;
+        font-family: $font-family-score;
+        font-weight: 800;
+        color: $color-primary;
+        margin-bottom: 1rem;
+    }
+
+    &__list-item--purple {
+        font-size: 1.8rem;
+        color: $color-primary;
+        margin: 1rem auto;
+    }
+
+    &__list--gray {
+        padding: 2rem;
+        border-radius: 1rem;
+        background-color: $color-gray;
+    }
+
+    &__img-wrap {
+        width: 6rem;
+        align-self: center;
+        margin: 0 3rem;
+    }
+
+    &__img {
+        width: 100%;
     }
 }

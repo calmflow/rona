@@ -5,10 +5,67 @@
   font-style: normal; }
 
 @font-face {
-  font-family: 'S-CoreDream-3Light';
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: 'SCoreDream';
+  font-weight: 100;
+  font-style: normal;
+  src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream1.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream1.woff) format("woff");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'SCoreDream';
+  font-weight: 200;
+  font-style: normal;
+  src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream2.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream2.woff) format("woff");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'SCoreDream';
+  font-weight: 300;
+  font-style: normal;
+  src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream3.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream3.woff) format("woff");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'SCoreDream';
+  font-weight: 400;
+  font-style: normal;
+  src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream4.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream4.woff) format("woff");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'SCoreDream';
+  font-weight: 500;
+  font-style: normal;
+  src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff) format("woff");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'SCoreDream';
+  font-weight: 600;
+  font-style: normal;
+  src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream6.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream6.woff) format("woff");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'SCoreDream';
+  font-weight: 700;
+  font-style: normal;
+  src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream7.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream7.woff) format("woff");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'SCoreDream';
+  font-weight: 800;
+  font-style: normal;
+  src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream8.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream8.woff) format("woff");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'SCoreDream';
+  font-weight: 900;
+  font-style: normal;
+  src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream9.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream9.woff) format("woff");
+  font-display: swap; }
 
 *,
 *::after,
@@ -40,111 +97,151 @@ body {
 
 .title {
   background-color: #6200ee;
-  font-family: "S-CoreDream-3Light";
+  font-family: "SCoreDream", sans-serif;
   text-align: center;
-  padding: 10rem 0; }
-
-.heading-primary--main-normal {
-  font-size: 5rem;
-  color: #ffffff; }
-
-.heading-primary--main-yellow {
-  font-size: 5rem;
-  color: #ffd500; }
-
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  color: #ffffff;
-  letter-spacing: 0.1rem; }
+  padding: 10rem 0 5rem 0; }
+  .title__heading-primary {
+    font-weight: 600; }
+    .title__heading-primary--main-normal {
+      font-size: 5rem;
+      color: #ffffff; }
+    .title__heading-primary--main-yellow {
+      font-size: 5rem;
+      color: #ffd500; }
+    .title__heading-primary--sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 500;
+      color: #ffffff;
+      letter-spacing: 0.1rem; }
 
 .intro {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #f0e9fb;
   padding: 10rem; }
-  .intro .text-box .heading-secondary {
-    font-size: 2.4rem;
-    font-family: 'S-CoreDream-3Light';
+  .intro__heading-secondary {
+    font-size: 2.6rem;
+    font-family: "SCoreDream", sans-serif;
+    font-weight: 500;
     margin-bottom: 2rem; }
-  .intro .text-box .text {
-    font-size: 1.8rem; }
-  .intro .img-box__item {
-    width: 50rem; }
-    .intro .img-box__item img {
-      width: 100%; }
+  .intro__description {
+    font-size: 2rem; }
+  .intro__img-wrap {
+    width: 40rem; }
+  .intro__img {
+    width: 100%; }
 
-.main-content {
+.main-content-1 {
   background-color: #6200ee;
   padding-top: 13rem; }
-  .main-content .banner {
+  .main-content-1__banner {
     padding: 8rem 0;
     color: #ffffff;
     background-color: #3c0092;
     text-align: center;
     position: relative; }
-    .main-content .banner .heading-secondary--main {
-      font-family: "S-CoreDream-3Light";
-      letter-spacing: 0.1rem;
-      font-size: 2.2rem;
-      font-weight: 600;
-      position: relative; }
-      .main-content .banner .heading-secondary--main::after {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 15rem;
-        height: 30rem;
-        top: -600%;
-        right: -45%;
-        background-image: url(../img/main-content.png);
-        background-size: contain;
-        background-repeat: no-repeat; }
-    .main-content .banner .heading-secondary--sub {
-      font-weight: 300;
-      display: block; }
-  .main-content .item-box {
+  .main-content-1__banner-message--main {
+    font-family: "SCoreDream", sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+    position: relative; }
+    .main-content-1__banner-message--main::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 15rem;
+      height: 30rem;
+      top: -600%;
+      right: -45%;
+      background-image: url(../img/main-content.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
+  .main-content-1__banner-message--sub {
+    font-weight: 300;
+    display: block; }
+  .main-content-1__container {
     padding: 6rem;
     text-align: center;
     color: #ffffff; }
-    .main-content .item-box .heading-secondary {
-      font-family: "S-CoreDream-3Light";
-      font-size: 2.2rem;
-      letter-spacing: 0.1rem;
-      margin-bottom: 5rem; }
-    .main-content .item-box .item-list {
-      display: flex;
-      justify-content: space-between;
-      max-width: 100rem;
-      margin: 0 auto; }
-      .main-content .item-box .item-list__item {
-        width: 23.5%;
-        text-align: left;
-        background-color: #ffffff;
-        color: #6200ee;
-        border-radius: 2rem;
-        padding: 2rem; }
-      .main-content .item-box .item-list__img {
-        width: 40%;
-        margin-bottom: 1rem; }
-      .main-content .item-box .item-list__title {
-        font-size: 2rem;
-        font-family: "S-CoreDream-3Light"; }
-      .main-content .item-box .item-list__text {
-        font-size: 1.5rem; }
-
-.cost {
-  padding: 8rem;
-  text-align: center; }
-  .cost .heading-secondary--main-purple {
-    font-family: "S-CoreDream-3Light";
+  .main-content-1__title {
+    font-family: "SCoreDream", sans-serif;
     font-size: 2.2rem;
-    color: #3c0092;
-    letter-spacing: 0.1rem; }
-  .cost .heading-secondary--main-bg {
-    font-family: "S-CoreDream-3Light";
-    font-size: 2.2rem;
-    color: #ffffff;
+    font-weight: 500;
     letter-spacing: 0.1rem;
-    background-color: #3c0092;
-    padding: 0.1rem 0.5rem; }
+    margin-bottom: 5rem; }
+  .main-content-1__item-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100rem;
+    margin: 0 auto; }
+  .main-content-1__item {
+    width: 23.5%;
+    text-align: left;
+    background-color: #ffffff;
+    color: #6200ee;
+    border-radius: 2rem;
+    padding: 2rem; }
+  .main-content-1__item-img {
+    width: 40%;
+    margin-bottom: 1rem; }
+  .main-content-1__item-title {
+    font-size: 1.8rem;
+    font-family: "SCoreDream", sans-serif; }
+  .main-content-1__item-description {
+    font-size: 1.5rem; }
+
+.main-content-2 {
+  padding: 8rem;
+  text-align: center;
+  background-color: #f0e9fb; }
+  .main-content-2__title {
+    margin-bottom: 5rem; }
+    .main-content-2__title--normal {
+      font-family: "SCoreDream", sans-serif;
+      font-size: 2.2rem;
+      color: #3c0092;
+      letter-spacing: 0.1rem; }
+    .main-content-2__title--bg {
+      font-family: "SCoreDream", sans-serif;
+      font-size: 2.2rem;
+      color: #ffffff;
+      letter-spacing: 0.1rem;
+      background-color: #3c0092;
+      padding: 0.1rem 0.5rem; }
+  .main-content-2__container {
+    display: flex;
+    justify-content: center; }
+  .main-content-2__list-border--white {
+    border-radius: 1rem;
+    border: 0.5rem solid #ffffff; }
+  .main-content-2__list-border--light-purple {
+    border-radius: 1rem;
+    border: 0.5rem solid #eadcff; }
+  .main-content-2__list--purple {
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    border: 0.5rem solid #b57cff; }
+  .main-content-2__list-title--purple {
+    font-size: 2rem;
+    font-family: "SCoreDream", sans-serif;
+    font-weight: 800;
+    color: #6200ee;
+    margin-bottom: 1rem; }
+  .main-content-2__list-item--purple {
+    font-size: 1.8rem;
+    color: #6200ee;
+    margin: 1rem auto; }
+  .main-content-2__list--gray {
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #eeeeee; }
+  .main-content-2__img-wrap {
+    width: 6rem;
+    align-self: center;
+    margin: 0 3rem; }
+  .main-content-2__img {
+    width: 100%; }
