@@ -99,9 +99,10 @@ body {
     }
 }
 
-.main-content-1 {
-    background-color: $color-primary;
-    padding-top: 13rem;
+.content {
+    padding: 8rem;
+    background-color: $color-secondary;
+    text-align: center;
 
     &__banner {
         padding: 8rem 0;
@@ -137,61 +138,29 @@ body {
         }
     }
 
-    &__container {
+    &__inner {
         padding: 6rem;
         text-align: center;
-        color: $color-white;
+    }
+
+    &__inner--row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__title {
         font-family: $font-family-score;
+        color: $color-white;
         font-size: 2.2rem;
         font-weight: 500;
         letter-spacing: 0.1rem;
         margin-bottom: 5rem;
-    }
 
-    &__item-list {
-        display: flex;
-        justify-content: space-between;
-        max-width: 100rem;
-        margin: 0 auto;
-    }
-
-    &__item {
-        width: 23.5%;
-        text-align: left;
-        background-color: $color-white;
-        color: $color-primary;
-        border-radius: 2rem;
-        padding: 2rem;
-
-        box-shadow: $shadow-light;
-    }
-    &__item-img {
-        width: 40%;
-        margin-bottom: 1rem;
-    }
-    &__item-title {
-        font-size: 1.8rem;
-        font-family: $font-family-score;
-    }
-    &__item-description {
-        font-size: 1.5rem;
-    }
-}
-
-.main-content-2 {
-    padding: 8rem;
-    text-align: center;
-    background-color: $color-secondary;
-
-    &__title {
-        margin-bottom: 5rem;
-
-        &--normal {
+        &--purple {
             font-family: $font-family-score;
             font-size: 2.2rem;
+            font-weight: 600;
             color: $dark-purple;
             letter-spacing: 0.1rem;
         }
@@ -205,10 +174,31 @@ body {
         }
     }
 
-    &__container {
+    &__list-wrap {
+        background-color: $dark-purple;
+    }
+
+    &__list-row {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+        max-width: 100rem;
+        margin: 0 auto;
+    }
+
+    &__list-colum {
+        &--purple {
+            padding: 2rem 3rem;
+            border-radius: 1rem;
+            background-color: $color-white;
+            border: 0.5rem solid $vivid-purple;
+        }
+
+        &--gray {
+            padding: 2.5rem;
+            background-color: $light-gray;
+
+            box-shadow: $shadow-light;
+        }
     }
 
     &__list-border--white {
@@ -218,24 +208,23 @@ body {
         box-shadow: $shadow-light;
     }
 
-    &__list-border--light-purple {
+    &__list-border--purple {
         border-radius: 1rem;
         border: 0.5rem solid $light-purple;
     }
 
-    &__list--purple {
-        padding: 2rem 3rem;
-        border-radius: 1rem;
-        background-color: $color-white;
-        border: 0.5rem solid $vivid-purple;
-    }
-
-    &__list-title--purple {
+    &__list-title {
         font-size: 2rem;
-        font-family: $font-family-score;
-        font-weight: 800;
-        color: $color-primary;
         margin-bottom: 1rem;
+
+        &--purple {
+            font-weight: 800;
+            color: $color-primary;
+        }
+        &--gray {
+            font-weight: 600;
+            color: $dark-gray;
+        }
     }
 
     &__list-item--purple {
@@ -244,25 +233,32 @@ body {
         margin: 1rem auto;
     }
 
-    &__list--gray {
-        padding: 2.5rem;
-        background-color: $light-gray;
-
-        box-shadow: $shadow-light;
-    }
-
-    &__list-title--gray {
-        font-size: 2rem;
-        font-family: $font-family-score;
-        font-weight: 600;
-        color: $dark-gray;
-        margin-bottom: 1rem;
-    }
-
     &__list-item--gray {
         font-size: 1.6rem;
         color: $dark-gray;
         margin: 1rem auto;
+    }
+
+    &__card {
+        width: 23.5%;
+        text-align: left;
+        background-color: $color-white;
+        color: $color-primary;
+        border-radius: 2rem;
+        padding: 2rem;
+
+        box-shadow: $shadow-light;
+    }
+    &__card-img {
+        width: 40%;
+        margin-bottom: 1rem;
+    }
+    &__card-title {
+        font-size: 1.8rem;
+        font-family: $font-family-score;
+    }
+    &__card-description {
+        font-size: 1.5rem;
     }
 
     &__img-wrap {
@@ -273,5 +269,23 @@ body {
 
     &__img {
         width: 100%;
+    }
+}
+
+.content--wide {
+    padding: 0;
+    background-color: $color-primary;
+    padding-top: 13rem;
+}
+
+.content--purple {
+    background-color: $color-primary;
+}
+
+.screen {
+    &__item {
+        padding: 6rem;
+        background-color: $color-white;
+        border-radius: 2rem;
     }
 }

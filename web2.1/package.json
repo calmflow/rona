@@ -1,10 +1,10 @@
 {
-    "name": "natours",
+    "name": "flow",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "npm run live-server & npm run compile:sass",
+        "start": "run-p live-server compile:sass",
         "live-server": "live-server",
         "compile:sass": "node-sass sass/main.scss css/style.css -w"
     },
@@ -13,6 +13,7 @@
     "license": "ISC",
     "devDependencies": {
         "live-server": "^1.2.2",
-        "node-sass": "^9.0.0"
+        "node-sass": "^9.0.0",
+        "npm-run-all": "^4.1.5"
     }
 }

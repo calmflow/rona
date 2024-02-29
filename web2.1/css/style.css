@@ -133,22 +133,23 @@ body {
   .intro__img {
     width: 100%; }
 
-.main-content-1 {
-  background-color: #6200ee;
-  padding-top: 13rem; }
-  .main-content-1__banner {
+.content {
+  padding: 8rem;
+  background-color: #f0e9fb;
+  text-align: center; }
+  .content__banner {
     padding: 8rem 0;
     color: #ffffff;
     background-color: #3c0092;
     text-align: center;
     position: relative; }
-  .main-content-1__banner-message--main {
+  .content__banner-message--main {
     font-family: "SCoreDream", sans-serif;
     letter-spacing: 0.1rem;
     font-size: 2.2rem;
     font-weight: 500;
     position: relative; }
-    .main-content-1__banner-message--main::after {
+    .content__banner-message--main::after {
       content: '';
       display: block;
       position: absolute;
@@ -159,25 +160,77 @@ body {
       background-image: url(../img/main-content.png);
       background-size: contain;
       background-repeat: no-repeat; }
-  .main-content-1__banner-message--sub {
+  .content__banner-message--sub {
     font-weight: 300;
     display: block; }
-  .main-content-1__container {
+  .content__inner {
     padding: 6rem;
-    text-align: center;
-    color: #ffffff; }
-  .main-content-1__title {
+    text-align: center; }
+  .content__inner--row {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .content__title {
     font-family: "SCoreDream", sans-serif;
+    color: #ffffff;
     font-size: 2.2rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
     margin-bottom: 5rem; }
-  .main-content-1__item-list {
+    .content__title--purple {
+      font-family: "SCoreDream", sans-serif;
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #3c0092;
+      letter-spacing: 0.1rem; }
+    .content__title--bg {
+      font-family: "SCoreDream", sans-serif;
+      font-size: 2.2rem;
+      color: #ffffff;
+      letter-spacing: 0.1rem;
+      background-color: #3c0092;
+      padding: 0.1rem 0.5rem; }
+  .content__list-wrap {
+    background-color: #3c0092; }
+  .content__list-row {
     display: flex;
     justify-content: space-between;
     max-width: 100rem;
     margin: 0 auto; }
-  .main-content-1__item {
+  .content__list-colum--purple {
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    border: 0.5rem solid #b57cff; }
+  .content__list-colum--gray {
+    padding: 2.5rem;
+    background-color: #eeeeee;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3); }
+  .content__list-border--white {
+    border-radius: 1rem;
+    border: 0.5rem solid #ffffff;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3); }
+  .content__list-border--purple {
+    border-radius: 1rem;
+    border: 0.5rem solid #eadcff; }
+  .content__list-title {
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+    .content__list-title--purple {
+      font-weight: 800;
+      color: #6200ee; }
+    .content__list-title--gray {
+      font-weight: 600;
+      color: #444; }
+  .content__list-item--purple {
+    font-size: 1.8rem;
+    color: #6200ee;
+    margin: 1rem auto; }
+  .content__list-item--gray {
+    font-size: 1.6rem;
+    color: #444;
+    margin: 1rem auto; }
+  .content__card {
     width: 23.5%;
     text-align: left;
     background-color: #ffffff;
@@ -185,76 +238,30 @@ body {
     border-radius: 2rem;
     padding: 2rem;
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3); }
-  .main-content-1__item-img {
+  .content__card-img {
     width: 40%;
     margin-bottom: 1rem; }
-  .main-content-1__item-title {
+  .content__card-title {
     font-size: 1.8rem;
     font-family: "SCoreDream", sans-serif; }
-  .main-content-1__item-description {
+  .content__card-description {
     font-size: 1.5rem; }
-
-.main-content-2 {
-  padding: 8rem;
-  text-align: center;
-  background-color: #f0e9fb; }
-  .main-content-2__title {
-    margin-bottom: 5rem; }
-    .main-content-2__title--normal {
-      font-family: "SCoreDream", sans-serif;
-      font-size: 2.2rem;
-      color: #3c0092;
-      letter-spacing: 0.1rem; }
-    .main-content-2__title--bg {
-      font-family: "SCoreDream", sans-serif;
-      font-size: 2.2rem;
-      color: #ffffff;
-      letter-spacing: 0.1rem;
-      background-color: #3c0092;
-      padding: 0.1rem 0.5rem; }
-  .main-content-2__container {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .main-content-2__list-border--white {
-    border-radius: 1rem;
-    border: 0.5rem solid #ffffff;
-    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3); }
-  .main-content-2__list-border--light-purple {
-    border-radius: 1rem;
-    border: 0.5rem solid #eadcff; }
-  .main-content-2__list--purple {
-    padding: 2rem 3rem;
-    border-radius: 1rem;
-    background-color: #ffffff;
-    border: 0.5rem solid #b57cff; }
-  .main-content-2__list-title--purple {
-    font-size: 2rem;
-    font-family: "SCoreDream", sans-serif;
-    font-weight: 800;
-    color: #6200ee;
-    margin-bottom: 1rem; }
-  .main-content-2__list-item--purple {
-    font-size: 1.8rem;
-    color: #6200ee;
-    margin: 1rem auto; }
-  .main-content-2__list--gray {
-    padding: 2.5rem;
-    background-color: #eeeeee;
-    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3); }
-  .main-content-2__list-title--gray {
-    font-size: 2rem;
-    font-family: "SCoreDream", sans-serif;
-    font-weight: 600;
-    color: #444;
-    margin-bottom: 1rem; }
-  .main-content-2__list-item--gray {
-    font-size: 1.6rem;
-    color: #444;
-    margin: 1rem auto; }
-  .main-content-2__img-wrap {
+  .content__img-wrap {
     width: 6rem;
     align-self: center;
     margin: 0 3rem; }
-  .main-content-2__img {
+  .content__img {
     width: 100%; }
+
+.content--wide {
+  padding: 0;
+  background-color: #6200ee;
+  padding-top: 13rem; }
+
+.content--purple {
+  background-color: #6200ee; }
+
+.screen__item {
+  padding: 6rem;
+  background-color: #ffffff;
+  border-radius: 2rem; }
