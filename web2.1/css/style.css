@@ -265,3 +265,14 @@ body {
   padding: 6rem;
   background-color: #ffffff;
   border-radius: 2rem; }
+
+.screen__talk {
+  padding: 1rem;
+  margin-bottom: 1rem; }
+  .screen__talk--purplefilled {
+    background-color: #6200ee;
+    color: #ffffff;
+    border-radius: 1rem 1rem 0 1rem; }
+  .screen__talk--purplelined {
+    border: 2px solid #6200ee;
+    border-radius: 1rem 1rem 1rem 0; }

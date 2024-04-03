@@ -288,4 +288,21 @@ body {
         background-color: $color-white;
         border-radius: 2rem;
     }
+
+    &__talk{
+        padding: 1rem;
+        margin-bottom: 1rem;
+
+        &--purplefilled{
+            background-color: $color-primary;
+            color: $color-white;
+            @include chat-right;
+            
+        }
+
+        &--purplelined{
+            border: 2px solid $color-primary;
+            @include chat-left;
+        }
+    }
 }
