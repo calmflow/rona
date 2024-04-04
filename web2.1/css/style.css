@@ -101,7 +101,8 @@ body {
   text-align: center;
   padding: 10rem 0 5rem 0; }
   .title__heading-primary {
-    font-weight: 600; }
+    font-weight: 600;
+    text-shadow: 0px 2px 1px #3c0092; }
     .title__heading-primary--main-normal {
       font-size: 5rem;
       color: #ffffff; }
@@ -163,6 +164,8 @@ body {
   .content__banner-message--sub {
     font-weight: 300;
     display: block; }
+  .content__banner-message--none::after {
+    display: none; }
   .content__inner {
     padding: 6rem;
     text-align: center; }
@@ -176,20 +179,24 @@ body {
     font-size: 2.2rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
-    margin-bottom: 5rem; }
+    margin-bottom: 5rem;
+    text-shadow: 0px 2px 1px #3c0092; }
     .content__title--purple {
       font-family: "SCoreDream", sans-serif;
       font-size: 2.2rem;
       font-weight: 600;
       color: #3c0092;
-      letter-spacing: 0.1rem; }
-    .content__title--bg {
+      letter-spacing: 0.1rem;
+      text-shadow: none; }
+    .content__title--bg-purple {
       font-family: "SCoreDream", sans-serif;
       font-size: 2.2rem;
       color: #ffffff;
       letter-spacing: 0.1rem;
       background-color: #3c0092;
       padding: 0.1rem 0.5rem; }
+  .content__description {
+    font-size: 1.8rem; }
   .content__list-wrap {
     background-color: #3c0092; }
   .content__list-row {
@@ -261,18 +268,136 @@ body {
 .content--purple {
   background-color: #6200ee; }
 
-.screen__item {
-  padding: 6rem;
-  background-color: #ffffff;
-  border-radius: 2rem; }
+.screen {
+  border-radius: 1rem; }
+  .screen--purple {
+    padding: 3rem;
+    background-color: #3c0092; }
+  .screen__item {
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    position: relative; }
+    .screen__item::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 5rem;
+      height: 5rem;
+      top: -5%;
+      left: -5%;
+      background-image: url(/img/Ok.png);
+      background-size: contain; }
+  .screen__item--gray {
+    padding: 2.3rem 2rem; }
+    .screen__item--gray::before {
+      display: none; }
+  .screen__item-inner {
+    display: flex;
+    flex-direction: column; }
+    .screen__item-inner:not(:first-child) {
+      margin-top: 2rem; }
+    .screen__item-inner--right {
+      align-items: end; }
+    .screen__item-inner--left {
+      align-items: start; }
+  .screen__talk {
+    font-size: 1.4rem;
+    padding: 0.7rem 1rem; }
+    .screen__talk--filled {
+      background-color: #6200ee;
+      border: 2px solid #6200ee;
+      text-shadow: 0px 2px 1px #3c0092;
+      color: #ffffff;
+      border-radius: 1rem 1rem 0 1rem;
+      margin-left: 3rem;
+      text-align: left; }
+    .screen__talk--lined {
+      border: 2px solid #6200ee;
+      border-radius: 1rem 1rem 1rem 0;
+      margin-right: 3rem;
+      text-align: left; }
+    .screen__talk--grayfill {
+      background-color: #444;
+      border-color: #444; }
+    .screen__talk--grayline {
+      border-color: #444; }
+  .screen__time {
+    display: table;
+    margin-top: 5px;
+    font-size: 1.3rem;
+    color: #000000;
+    background-color: #eeeeee;
+    padding: 0 6px;
+    border-radius: 10px; }
+  .screen__narrator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -1.5rem; }
+  .screen__line {
+    display: block;
+    height: 1px;
+    width: 30%;
+    background-color: #444; }
 
-.screen__talk {
-  padding: 1rem;
-  margin-bottom: 1rem; }
-  .screen__talk--purplefilled {
-    background-color: #6200ee;
+.service-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  margin-right: 3rem; }
+  .service-description__title {
+    font-family: "SCoreDream", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #3c0092;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem; }
+    .service-description__title--box {
+      padding: 0 0 0 3px;
+      position: relative;
+      z-index: 0; }
+      .service-description__title--box::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #eadcff;
+        width: 110%;
+        height: 70%;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1; }
+  .service-description__sub {
+    font-size: 1.6rem;
+    text-align: left; }
+
+.service-list {
+  background-color: #3c0092;
+  padding: 3rem;
+  border-radius: 2rem; }
+  .service-list__item {
+    display: flex;
+    align-items: center; }
+  .service-list__title {
     color: #ffffff;
-    border-radius: 1rem 1rem 0 1rem; }
-  .screen__talk--purplelined {
-    border: 2px solid #6200ee;
-    border-radius: 1rem 1rem 1rem 0; }
+    margin-left: 2rem;
+    font-size: 2.2rem; }
+
+.info-list {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 2rem; }
+  .info-list__item {
+    font-family: "SCoreDream", sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-align: left;
+    padding: 0.8rem; }
+  .info-list__sub {
+    font-family: "SUIT-Regular", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 0.5rem; }

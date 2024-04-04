@@ -51,6 +51,7 @@ body {
 
     &__heading-primary {
         font-weight: 600;
+        @include purple-shadow;
 
         &--main-normal {
             font-size: 5rem;
@@ -136,6 +137,11 @@ body {
             font-weight: 300;
             display: block;
         }
+        &--none {
+            &::after {
+                display: none;
+            }
+        }
     }
 
     &__inner {
@@ -156,15 +162,13 @@ body {
         font-weight: 500;
         letter-spacing: 0.1rem;
         margin-bottom: 5rem;
+        @include purple-shadow;
 
         &--purple {
-            font-family: $font-family-score;
-            font-size: 2.2rem;
-            font-weight: 600;
-            color: $dark-purple;
-            letter-spacing: 0.1rem;
+            @include haeding-dark-purple;
+            @include remove-shadow;
         }
-        &--bg {
+        &--bg-purple {
             font-family: $font-family-score;
             font-size: 2.2rem;
             color: $color-white;
@@ -172,6 +176,10 @@ body {
             background-color: $dark-purple;
             padding: 0.1rem 0.5rem;
         }
+    }
+
+    &__description {
+        font-size: 1.8rem;
     }
 
     &__list-wrap {
@@ -283,26 +291,183 @@ body {
 }
 
 .screen {
-    &__item {
-        padding: 6rem;
-        background-color: $color-white;
-        border-radius: 2rem;
+    border-radius: 1rem;
+
+    &--purple {
+        padding: 3rem;
+        background-color: $dark-purple;
     }
 
-    &__talk{
-        padding: 1rem;
+    &__item {
+        // height: 25rem;
+        padding: 3rem 2rem;
+        background-color: $color-white;
+        border-radius: 2rem;
         margin-bottom: 1rem;
 
-        &--purplefilled{
-            background-color: $color-primary;
-            color: $color-white;
-            @include chat-right;
-            
+        position: relative;
+
+        // @include flex-column;
+
+        &::before {
+            @include before;
+            width: 5rem;
+            height: 5rem;
+            top: -5%;
+            left: -5%;
+            background-image: url(/img/Ok.png);
+            background-size: contain;
+        }
+    }
+
+    &__item--gray {
+        padding: 2.3rem 2rem;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    &__item-inner {
+        display: flex;
+        flex-direction: column;
+
+        &:not(:first-child) {
+            margin-top: 2rem;
         }
 
-        &--purplelined{
+        &--right {
+            align-items: end;
+        }
+
+        &--left {
+            align-items: start;
+        }
+    }
+
+    &__talk {
+        font-size: 1.4rem;
+        padding: 0.7rem 1rem;
+
+        &--filled {
+            background-color: $color-primary;
+            border: 2px solid $color-primary;
+            text-shadow: 0px 2px 1px $dark-purple;
+
+            color: $color-white;
+            @include chat-right;
+        }
+
+        &--lined {
             border: 2px solid $color-primary;
             @include chat-left;
         }
+
+        &--grayfill {
+            background-color: $dark-gray;
+            border-color: $dark-gray;
+        }
+
+        &--grayline {
+            border-color: $dark-gray;
+        }
+    }
+
+    &__time {
+        display: table;
+        margin-top: 5px;
+        font-size: 1.3rem;
+        color: $color-black;
+        background-color: $light-gray;
+        padding: 0 6px;
+        border-radius: 10px;
+    }
+
+    &__narrator {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: -1.5rem;
+    }
+
+    &__line {
+        display: block;
+        height: 1px;
+        width: 30%;
+        background-color: $dark-gray;
+    }
+}
+
+.service-description {
+    @include flex-column;
+    align-items: start;
+    margin-right: 3rem;
+
+    &__title {
+        @include haeding-dark-purple;
+        margin-bottom: 2rem;
+
+        &--box {
+            padding: 0 0 0 3px;
+            position: relative;
+            z-index: 0;
+
+            &::before {
+                @include before;
+                background-color: $light-purple;
+                width: 110%;
+                height: 70%;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+
+                z-index: -1;
+            }
+        }
+    }
+
+    &__sub {
+        font-size: 1.6rem;
+        text-align: left;
+    }
+}
+
+.service-list {
+    background-color: $dark-purple;
+    padding: 3rem;
+    border-radius: 2rem;
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        color: $color-white;
+        margin-left: 2rem;
+        font-size: 2.2rem;
+    }
+}
+
+.info-list {
+    background-color: $color-white;
+    padding: 2rem;
+    border-radius: 2rem;
+
+    &__item {
+        font-family: $font-family-score;
+        font-weight: 500;
+        font-size: 1.8rem;
+        text-align: left;
+
+        padding: 0.8rem;
+    }
+
+    &__sub {
+        font-family: $font-family-suit;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-left: 0.5rem;
     }
 }
