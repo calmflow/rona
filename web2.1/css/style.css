@@ -173,6 +173,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+  .content__container {
+    position: relative;
+    width: 88rem;
+    display: flex;
+    align-items: center; }
   .content__title {
     font-family: "SCoreDream", sans-serif;
     color: #ffffff;
@@ -195,8 +200,6 @@ body {
       letter-spacing: 0.1rem;
       background-color: #3c0092;
       padding: 0.1rem 0.5rem; }
-  .content__description {
-    font-size: 1.8rem; }
   .content__list-wrap {
     background-color: #3c0092; }
   .content__list-row {
@@ -342,24 +345,24 @@ body {
     width: 30%;
     background-color: #444; }
 
-.service-description {
+.description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
   margin-right: 3rem; }
-  .service-description__title {
+  .description__title {
     font-family: "SCoreDream", sans-serif;
     font-size: 2.2rem;
     font-weight: 600;
     color: #3c0092;
     letter-spacing: 0.1rem;
     margin-bottom: 2rem; }
-    .service-description__title--box {
+    .description__title--box {
       padding: 0 0 0 3px;
       position: relative;
       z-index: 0; }
-      .service-description__title--box::before {
+      .description__title--box::before {
         content: '';
         display: block;
         position: absolute;
@@ -370,24 +373,42 @@ body {
         left: 50%;
         transform: translateX(-50%);
         z-index: -1; }
-  .service-description__sub {
+  .description__sub {
     font-size: 1.6rem;
     text-align: left; }
 
 .service-list {
-  background-color: #3c0092;
+  position: absolute;
   padding: 3rem;
   border-radius: 2rem; }
+  .service-list--dark {
+    position: relative;
+    background-color: #3c0092;
+    z-index: 3;
+    left: 0; }
+  .service-list--middle {
+    background-color: #6200ee;
+    padding: 2rem;
+    z-index: 2;
+    left: 12rem; }
+  .service-list--light {
+    background-color: #b57cff;
+    padding: 1rem;
+    z-index: 1;
+    left: 24rem; }
   .service-list__item {
     display: flex;
     align-items: center; }
   .service-list__title {
     color: #ffffff;
+    width: 8rem;
     margin-left: 2rem;
-    font-size: 2.2rem; }
+    font-size: 2.2rem;
+    text-shadow: 0px 1px 1px #3c0092; }
 
 .info-list {
   background-color: #ffffff;
+  width: 48rem;
   padding: 2rem;
   border-radius: 2rem; }
   .info-list__item {

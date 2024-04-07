@@ -26,6 +26,10 @@
     text-shadow: 0px 2px 1px $dark-purple;
 }
 
+@mixin light-shadow {
+    text-shadow: 0px 1px 1px $dark-purple;
+}
+
 @mixin remove-shadow {
     text-shadow: none;
 }

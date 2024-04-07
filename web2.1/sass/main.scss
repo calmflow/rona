@@ -155,6 +155,13 @@ body {
         align-items: center;
     }
 
+    &__container{
+        position: relative;
+        width: 88rem;
+        display: flex;
+        align-items: center;
+    }
+
     &__title {
         font-family: $font-family-score;
         color: $color-white;
@@ -176,10 +183,6 @@ body {
             background-color: $dark-purple;
             padding: 0.1rem 0.5rem;
         }
-    }
-
-    &__description {
-        font-size: 1.8rem;
     }
 
     &__list-wrap {
@@ -399,7 +402,7 @@ body {
     }
 }
 
-.service-description {
+.description {
     @include flex-column;
     align-items: start;
     margin-right: 3rem;
@@ -434,9 +437,30 @@ body {
 }
 
 .service-list {
-    background-color: $dark-purple;
+    position: absolute;
     padding: 3rem;
     border-radius: 2rem;
+
+    &--dark{
+        position: relative;
+        background-color: $dark-purple;
+        z-index: 3;
+        left: 0;
+    }
+
+    &--middle{
+        background-color: $color-primary;
+        padding: 2rem;
+        z-index: 2;
+        left: 12rem;
+    }
+
+    &--light{
+        background-color: $vivid-purple;
+        padding: 1rem;
+        z-index: 1;
+        left: 24rem;
+    }
 
     &__item {
         display: flex;
@@ -445,13 +469,17 @@ body {
 
     &__title {
         color: $color-white;
+        width: 8rem;
         margin-left: 2rem;
         font-size: 2.2rem;
+
+        @include light-shadow;
     }
 }
 
 .info-list {
     background-color: $color-white;
+    width: 48rem;
     padding: 2rem;
     border-radius: 2rem;
 
