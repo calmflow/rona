@@ -1,0 +1,42 @@
+@import '../abstracts/mixins';
+
+.btn-arrow {
+    position: absolute;
+    z-index: 4;
+
+    background-color: $color-white;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+
+    &__arrow {
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+
+        &--prev {
+            left: 50%;
+            top: 50%;
+            transform: translate(-40%, -50%) rotate(45deg);
+            border-left: 1px solid $color-black;
+            border-bottom: 1px solid $color-black;
+        }
+        &--next {
+            left: 50%;
+            top: 50%;
+            transform: translate(-60%, -50%) rotate(-45deg);
+            border-right: 1px solid $color-black;
+            border-bottom: 1px solid $color-black;
+        }
+    }
+    &--prev {
+        left: -2rem;
+    }
+
+    &--next {
+        right: 2rem;
+    }
+}

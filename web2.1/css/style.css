@@ -67,6 +67,37 @@
   src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream9.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream9.woff) format("woff");
   font-display: swap; }
 
+.btn-arrow {
+  position: absolute;
+  z-index: 4;
+  background-color: #ffffff;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer; }
+  .btn-arrow__arrow {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem; }
+    .btn-arrow__arrow--prev {
+      left: 50%;
+      top: 50%;
+      transform: translate(-40%, -50%) rotate(45deg);
+      border-left: 1px solid #000000;
+      border-bottom: 1px solid #000000; }
+    .btn-arrow__arrow--next {
+      left: 50%;
+      top: 50%;
+      transform: translate(-60%, -50%) rotate(-45deg);
+      border-right: 1px solid #000000;
+      border-bottom: 1px solid #000000; }
+  .btn-arrow--prev {
+    left: -2rem; }
+  .btn-arrow--next {
+    right: 2rem; }
+
 *,
 *::after,
 *::before {
@@ -381,17 +412,17 @@ body {
   position: absolute;
   padding: 3rem;
   border-radius: 2rem; }
-  .service-list--dark {
+  .service-list--1 {
     position: relative;
     background-color: #3c0092;
     z-index: 3;
     left: 0; }
-  .service-list--middle {
+  .service-list--2 {
     background-color: #6200ee;
     padding: 2rem;
     z-index: 2;
     left: 12rem; }
-  .service-list--light {
+  .service-list--3 {
     background-color: #b57cff;
     padding: 1rem;
     z-index: 1;
@@ -405,6 +436,8 @@ body {
     margin-left: 2rem;
     font-size: 2.2rem;
     text-shadow: 0px 1px 1px #3c0092; }
+    .service-list__title--left {
+      text-align: left; }
 
 .info-list {
   background-color: #ffffff;

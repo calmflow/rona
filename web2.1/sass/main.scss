@@ -155,7 +155,7 @@ body {
         align-items: center;
     }
 
-    &__container{
+    &__container {
         position: relative;
         width: 88rem;
         display: flex;
@@ -441,21 +441,21 @@ body {
     padding: 3rem;
     border-radius: 2rem;
 
-    &--dark{
+    &--1 {
         position: relative;
         background-color: $dark-purple;
         z-index: 3;
         left: 0;
     }
 
-    &--middle{
+    &--2 {
         background-color: $color-primary;
         padding: 2rem;
         z-index: 2;
         left: 12rem;
     }
 
-    &--light{
+    &--3 {
         background-color: $vivid-purple;
         padding: 1rem;
         z-index: 1;
@@ -472,8 +472,11 @@ body {
         width: 8rem;
         margin-left: 2rem;
         font-size: 2.2rem;
-
         @include light-shadow;
+
+        &--left {
+            text-align: left;
+        }
     }
 }
 

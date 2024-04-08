@@ -41,3 +41,9 @@
     color: $dark-purple;
     letter-spacing: 0.1rem;
 }
+
+@mixin absolute-center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
