@@ -1,0 +1,25 @@
+.right-in {
+    animation: rightIn 1s;
+}
+
+// .left-in {
+//     animation: leftIn 1s;
+// }
+
+@keyframes rightIn {
+    from {
+        left: 3rem;
+    }
+    to {
+        left: 0;
+    }
+}
+
+// @keyframes lefttIn {
+//     from {
+//         left: -3rem;
+//     }
+//     to {
+//         left: 0;
+//     }
+// }
