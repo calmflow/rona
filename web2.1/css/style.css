@@ -69,7 +69,7 @@
 
 .btn-arrow {
   position: absolute;
-  z-index: 4;
+  z-index: 9999;
   background-color: #ffffff;
   width: 4rem;
   height: 4rem;
@@ -94,9 +94,9 @@
       border-right: 1px solid #000000;
       border-bottom: 1px solid #000000; }
   .btn-arrow--prev {
-    left: -2rem; }
+    left: 0; }
   .btn-arrow--next {
-    right: 2rem; }
+    right: 0; }
 
 *,
 *::after,
@@ -207,8 +207,10 @@ body {
   .content__container {
     position: relative;
     width: 88rem;
+    padding-left: 2rem;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    overflow: hidden; }
   .content__title {
     font-family: "SCoreDream", sans-serif;
     color: #ffffff;
@@ -408,25 +410,35 @@ body {
     font-size: 1.6rem;
     text-align: left; }
 
+.service-list-wrap {
+  position: relative;
+  width: 88rem;
+  display: flex;
+  align-items: center;
+  transition: all 1s; }
+
 .service-list {
   position: absolute;
   padding: 3rem;
   border-radius: 2rem; }
-  .service-list--1 {
+  .service-list:nth-child(1) {
     position: relative;
-    background-color: #3c0092;
     z-index: 3;
     left: 0; }
-  .service-list--2 {
-    background-color: #6200ee;
+  .service-list:nth-child(2) {
     padding: 2rem;
     z-index: 2;
     left: 12rem; }
-  .service-list--3 {
-    background-color: #b57cff;
+  .service-list:nth-child(3) {
     padding: 1rem;
     z-index: 1;
     left: 24rem; }
+  .service-list--dark {
+    background-color: #3c0092; }
+  .service-list--primary {
+    background-color: #6200ee; }
+  .service-list--vivid {
+    background-color: #b57cff; }
   .service-list__item {
     display: flex;
     align-items: center; }

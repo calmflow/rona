@@ -158,8 +158,11 @@ body {
     &__container {
         position: relative;
         width: 88rem;
+        padding-left: 2rem;
         display: flex;
         align-items: center;
+
+        overflow: hidden;
     }
 
     &__title {
@@ -436,31 +439,50 @@ body {
     }
 }
 
+.service-list-wrap{
+    position: relative;
+    width: 88rem;
+    display: flex;
+    align-items: center;
+
+    transition: all 1s;
+}
+
 .service-list {
     position: absolute;
     padding: 3rem;
     border-radius: 2rem;
 
-    &--1 {
+    &:nth-child(1) {
         position: relative;
-        background-color: $dark-purple;
         z-index: 3;
         left: 0;
     }
 
-    &--2 {
-        background-color: $color-primary;
+    &:nth-child(2) {
         padding: 2rem;
         z-index: 2;
         left: 12rem;
     }
 
-    &--3 {
-        background-color: $vivid-purple;
+    &:nth-child(3) {
         padding: 1rem;
         z-index: 1;
         left: 24rem;
     }
+
+    &--dark{
+        background-color: $dark-purple;
+    }
+
+    &--primary{
+        background-color: $color-primary;
+    }
+
+    &--vivid{
+        background-color: $vivid-purple;
+    }
+
 
     &__item {
         display: flex;

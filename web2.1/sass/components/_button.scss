@@ -2,7 +2,7 @@
 
 .btn-arrow {
     position: absolute;
-    z-index: 4;
+    z-index: 9999;
 
     background-color: $color-white;
     width: 4rem;
@@ -33,10 +33,10 @@
         }
     }
     &--prev {
-        left: -2rem;
+        left: 0;
     }
 
     &--next {
-        right: 2rem;
+        right: 0;
     }
 }

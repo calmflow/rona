@@ -6,6 +6,8 @@
         <title>Document</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/common.css" />
+        <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+        <script src="js/shopping.js"></script>
     </head>
     <body>
         <header id="header">
@@ -248,75 +250,77 @@
                         <button class="btn-arrow btn-arrow--prev">
                             <div class="btn-arrow__arrow btn-arrow__arrow--prev"></div>
                         </button>
-                        <ul class="service-list service-list--1">
-                            <li class="service-list__item">
-                                <ul class="info-list">
-                                    <li class="info-list__item">
-                                        쇼핑몰 메인·서브 페이지 디자인<span class="info-list__sub"
-                                            >(영업일 기준 5~10일 소요)</span
-                                        >
-                                    </li>
-                                    <li class="info-list__item">
-                                        제품 상세페이지 제작<span class="info-list__sub"
-                                            >(일 최대 6개 - 높이 5000px 기준)</span
-                                        >
-                                    </li>
-                                    <li class="info-list__item">
-                                        쇼핑몰 홍보용 이미지 제작<span class="info-list__sub"
-                                            >(일 최대 4개 - 1000*1000 기준)</span
-                                        >
-                                    </li>
-                                    <li class="info-list__item">팝업 및 배너</li>
-                                </ul>
-                                <h2 class="service-list__title">쇼핑몰 디자인</h2>
-                            </li>
-                        </ul>
-                        <ul class="service-list service-list--2">
-                            <li class="service-list__item">
-                                <ul class="info-list">
-                                    <li class="info-list__item">
-                                        쇼핑몰 메인·서브 페이지 디자인<span class="info-list__sub"
-                                            >(영업일 기준 5~10일 소요)</span
-                                        >
-                                    </li>
-                                    <li class="info-list__item">
-                                        제품 상세페이지 제작<span class="info-list__sub"
-                                            >(일 최대 6개 - 높이 5000px 기준)</span
-                                        >
-                                    </li>
-                                    <li class="info-list__item">
-                                        쇼핑몰 홍보용 이미지 제작<span class="info-list__sub"
-                                            >(일 최대 4개 - 1000*1000 기준)</span
-                                        >
-                                    </li>
-                                    <li class="info-list__item">팝업 및 배너</li>
-                                </ul>
-                                <h2 class="service-list__title">쇼핑몰 운영</h2>
-                            </li>
-                        </ul>
-                        <ul class="service-list service-list--3">
-                            <li class="service-list__item">
-                                <ul class="info-list">
-                                    <li class="info-list__item">
-                                        쇼핑몰 메인·서브 페이지 디자인<span class="info-list__sub"
-                                            >(영업일 기준 5~10일 소요)</span
-                                        >
-                                    </li>
-                                    <li class="info-list__item">
-                                        제품 상세페이지 제작<span class="info-list__sub"
-                                            >(일 최대 6개 - 높이 5000px 기준)</span
-                                        >
-                                    </li>
-                                    <li class="info-list__item">
-                                        쇼핑몰 홍보용 이미지 제작<span class="info-list__sub"
-                                            >(일 최대 4개 - 1000*1000 기준)</span
-                                        >
-                                    </li>
-                                    <li class="info-list__item">팝업 및 배너</li>
-                                </ul>
-                                <h2 class="service-list__title service-list__title--left">마케팅</h2>
-                            </li>
-                        </ul>
+                        <div class="service-list-wrap">
+                            <ul class="service-list service-list--dark">
+                                <li class="service-list__item">
+                                    <ul class="info-list">
+                                        <li class="info-list__item">
+                                            쇼핑몰 메인·서브 페이지 디자인<span class="info-list__sub"
+                                                >(영업일 기준 5~10일 소요)</span
+                                            >
+                                        </li>
+                                        <li class="info-list__item">
+                                            제품 상세페이지 제작<span class="info-list__sub"
+                                                >(일 최대 6개 - 높이 5000px 기준)</span
+                                            >
+                                        </li>
+                                        <li class="info-list__item">
+                                            쇼핑몰 홍보용 이미지 제작<span class="info-list__sub"
+                                                >(일 최대 4개 - 1000*1000 기준)</span
+                                            >
+                                        </li>
+                                        <li class="info-list__item">팝업 및 배너</li>
+                                    </ul>
+                                    <h2 class="service-list__title">쇼핑몰 디자인</h2>
+                                </li>
+                            </ul>
+                            <ul class="service-list service-list--primary">
+                                <li class="service-list__item">
+                                    <ul class="info-list">
+                                        <li class="info-list__item">
+                                            쇼핑몰 운영 서비스 내용<span class="info-list__sub"
+                                                >(영업일 기준 5~10일 소요)</span
+                                            >
+                                        </li>
+                                        <li class="info-list__item">
+                                            쇼핑몰 운영 서비스 내용<span class="info-list__sub"
+                                                >(일 최대 6개 - 높이 5000px 기준)</span
+                                            >
+                                        </li>
+                                        <li class="info-list__item">
+                                            쇼핑몰 운영 서비스 내용<span class="info-list__sub"
+                                                >(일 최대 4개 - 1000*1000 기준)</span
+                                            >
+                                        </li>
+                                        <li class="info-list__item">팝업 및 배너</li>
+                                    </ul>
+                                    <h2 class="service-list__title">쇼핑몰 운영</h2>
+                                </li>
+                            </ul>
+                            <ul class="service-list service-list--vivid">
+                                <li class="service-list__item">
+                                    <ul class="info-list">
+                                        <li class="info-list__item">
+                                            쇼핑몰 메인·서브 페이지 디자인<span class="info-list__sub"
+                                                >(영업일 기준 5~10일 소요)</span
+                                            >
+                                        </li>
+                                        <li class="info-list__item">
+                                            제품 상세페이지 제작<span class="info-list__sub"
+                                                >(일 최대 6개 - 높이 5000px 기준)</span
+                                            >
+                                        </li>
+                                        <li class="info-list__item">
+                                            쇼핑몰 홍보용 이미지 제작<span class="info-list__sub"
+                                                >(일 최대 4개 - 1000*1000 기준)</span
+                                            >
+                                        </li>
+                                        <li class="info-list__item">팝업 및 배너</li>
+                                    </ul>
+                                    <h2 class="service-list__title service-list__title--left">마케팅</h2>
+                                </li>
+                            </ul>
+                        </div>
                         <button class="btn-arrow btn-arrow--next">
                             <div class="btn-arrow__arrow btn-arrow__arrow--next"></div>
                         </button>
