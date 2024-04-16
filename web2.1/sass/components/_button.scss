@@ -1,5 +1,13 @@
 @import '../abstracts/mixins';
 
+.btn {
+    position: absolute;
+    width: 84.5rem;
+    height: 100%;
+    right: 0;
+    z-index: 4;
+}
+
 .btn-arrow {
     position: absolute;
     z-index: 9999;
@@ -33,10 +41,14 @@
         }
     }
     &--prev {
-        left: 0;
+        left: -2rem;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     &--next {
-        right: -0.5rem;
+        right: -2rem;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }

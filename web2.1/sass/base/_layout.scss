@@ -1,0 +1,195 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.content {
+    padding: 8rem;
+    background-color: $color-secondary;
+    text-align: center;
+
+    &__banner {
+        padding: 8rem 0;
+        color: $color-white;
+        background-color: $dark-purple;
+        text-align: center;
+        position: relative;
+    }
+
+    &__banner-message {
+        &--main {
+            font-family: $font-family-score;
+            letter-spacing: 0.1rem;
+            font-size: 2.2rem;
+            font-weight: 500;
+            position: relative;
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 15rem;
+                height: 30rem;
+                top: -600%;
+                right: -45%;
+                background-image: url(../img/main-content.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+        &--sub {
+            font-weight: 300;
+            display: block;
+        }
+        &--none {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    &__inner {
+        padding: 6rem;
+        text-align: center;
+    }
+
+    &__inner--row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__container {
+        position: relative;
+        width: 84.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: $font-family-score;
+        color: $color-white;
+        font-size: 2.2rem;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        margin-bottom: 5rem;
+        @include purple-shadow;
+
+        &--purple {
+            @include haeding-dark-purple;
+            @include remove-shadow;
+        }
+        &--bg-purple {
+            font-family: $font-family-score;
+            font-size: 2.2rem;
+            color: $color-white;
+            letter-spacing: 0.1rem;
+            background-color: $dark-purple;
+            padding: 0.1rem 0.5rem;
+        }
+    }
+
+    &__list-wrap {
+        background-color: $dark-purple;
+    }
+
+    &__list-row {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100rem;
+        margin: 0 auto;
+    }
+
+    &__list-colum {
+        &--purple {
+            padding: 2rem 3rem;
+            border-radius: 1rem;
+            background-color: $color-white;
+            border: 0.5rem solid $vivid-purple;
+        }
+
+        &--gray {
+            padding: 2.5rem;
+            background-color: $light-gray;
+
+            box-shadow: $shadow-light;
+        }
+    }
+
+    &__list-border--white {
+        border-radius: 1rem;
+        border: 0.5rem solid $color-white;
+
+        box-shadow: $shadow-light;
+    }
+
+    &__list-border--purple {
+        border-radius: 1rem;
+        border: 0.5rem solid $light-purple;
+    }
+
+    &__list-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+
+        &--purple {
+            font-weight: 800;
+            color: $color-primary;
+        }
+        &--gray {
+            font-weight: 600;
+            color: $dark-gray;
+        }
+    }
+
+    &__list-item--purple {
+        font-size: 1.8rem;
+        color: $color-primary;
+        margin: 1rem auto;
+    }
+
+    &__list-item--gray {
+        font-size: 1.6rem;
+        color: $dark-gray;
+        margin: 1rem auto;
+    }
+
+    &__card {
+        width: 23.5%;
+        text-align: left;
+        background-color: $color-white;
+        color: $color-primary;
+        border-radius: 2rem;
+        padding: 2rem;
+
+        box-shadow: $shadow-light;
+    }
+    &__card-img {
+        width: 40%;
+        margin-bottom: 1rem;
+    }
+    &__card-title {
+        font-size: 1.8rem;
+        font-family: $font-family-score;
+    }
+    &__card-description {
+        font-size: 1.5rem;
+    }
+
+    &__img-wrap {
+        width: 6rem;
+        align-self: center;
+        margin: 0 3rem;
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
+
+.content--wide {
+    padding: 0;
+    background-color: $color-primary;
+    padding-top: 13rem;
+}
+
+.content--purple {
+    background-color: $color-primary;
+}
