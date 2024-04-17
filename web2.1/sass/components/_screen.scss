@@ -1,0 +1,108 @@
+.screen {
+    border-radius: 1rem;
+
+    &--purple {
+        padding: 3rem;
+        background-color: $dark-purple;
+    }
+
+    &__item {
+        // height: 25rem;
+        padding: 3rem 2rem;
+        background-color: $color-white;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+
+        position: relative;
+
+        // @include flex-column;
+
+        &::before {
+            @include before;
+            width: 5rem;
+            height: 5rem;
+            top: -5%;
+            left: -5%;
+            background-image: url(/img/Ok.png);
+            background-size: contain;
+        }
+    }
+
+    &__item--gray {
+        padding: 2.3rem 2rem;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    &__item-inner {
+        display: flex;
+        flex-direction: column;
+
+        &:not(:first-child) {
+            margin-top: 2rem;
+        }
+
+        &--right {
+            align-items: end;
+        }
+
+        &--left {
+            align-items: start;
+        }
+    }
+
+    &__talk {
+        font-size: 1.4rem;
+        padding: 0.7rem 1rem;
+
+        &--filled {
+            background-color: $color-primary;
+            border: 2px solid $color-primary;
+            text-shadow: 0px 2px 1px $dark-purple;
+
+            color: $color-white;
+            @include chat-right;
+        }
+
+        &--lined {
+            border: 2px solid $color-primary;
+            @include chat-left;
+        }
+
+        &--grayfill {
+            background-color: $dark-gray;
+            border-color: $dark-gray;
+        }
+
+        &--grayline {
+            border-color: $dark-gray;
+        }
+    }
+
+    &__time {
+        display: table;
+        margin-top: 5px;
+        font-size: 1.3rem;
+        color: $color-black;
+        background-color: $light-gray;
+        padding: 0 6px;
+        border-radius: 10px;
+    }
+
+    &__narrator {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: -1.5rem;
+    }
+
+    &__line {
+        display: block;
+        height: 1px;
+        width: 30%;
+        background-color: $dark-gray;
+    }
+}

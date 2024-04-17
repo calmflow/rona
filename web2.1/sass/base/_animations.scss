@@ -2,9 +2,9 @@
     animation: rightIn 1s;
 }
 
-// .left-in {
-//     animation: leftIn 1s;
-// }
+.left-in {
+    animation: leftIn 1s;
+}
 
 @keyframes rightIn {
     from {
@@ -15,11 +15,11 @@
     }
 }
 
-// @keyframes lefttIn {
-//     from {
-//         left: -3rem;
-//     }
-//     to {
-//         left: 0;
-//     }
-// }
+@keyframes lefttIn {
+    from {
+        left: -0.5rem;
+    }
+    to {
+        left: 0;
+    }
+}

@@ -1,0 +1,35 @@
+@import '../abstracts/variables';
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+    border: none;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    display: block;
+}
+
+body {
+    font-family: $font-family-suit;
+    font-weight: 400;
+    line-height: 1.7;
+    box-sizing: border-box;
+}

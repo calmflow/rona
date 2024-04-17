@@ -193,3 +193,37 @@
 .content--purple {
     background-color: $color-primary;
 }
+
+.section-description {
+    @include flex-column;
+    align-items: start;
+    margin-right: 3rem;
+
+    &__title {
+        @include haeding-dark-purple;
+        margin-bottom: 2rem;
+
+        &--box {
+            padding: 0 0 0 3px;
+            position: relative;
+            z-index: 0;
+
+            &::before {
+                @include before;
+                background-color: $light-purple;
+                width: 110%;
+                height: 70%;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+
+                z-index: -1;
+            }
+        }
+    }
+
+    &__sub {
+        font-size: 1.6rem;
+        text-align: left;
+    }
+}
