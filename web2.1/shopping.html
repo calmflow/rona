@@ -6,6 +6,8 @@
         <title>Document</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/swiper-bundle.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
         <script src="js/shopping.js"></script>
     </head>
@@ -246,9 +248,9 @@
                         <h2 class="section-description__title section-description__title--box">업무 내용</h2>
                         <p class="section-description__sub">구독 서비스가 제공하는<br />다양한 업무 내용</p>
                     </div>
-                    <div class="content__container">
-                        <div class="list">
-                            <div class="service-list-wrap">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
                                 <ul class="service-list service-list--dark">
                                     <li class="service-list__item">
                                         <ul class="info-list">
@@ -272,74 +274,76 @@
                                         <h2 class="service-list__title">쇼핑몰 디자인</h2>
                                     </li>
                                 </ul>
+                            </div>
+                            <div class="swiper-slide">
                                 <ul class="service-list service-list--primary">
                                     <li class="service-list__item">
                                         <ul class="info-list">
                                             <li class="info-list__item">
-                                                쇼핑몰 운영 서비스 내용<span class="info-list__sub"
-                                                    >(영업일 기준 5~10일 소요)</span
-                                                >
+                                                상품 등록 / 상품 옵션 설정 / 카테고리 분류 및 진열
                                             </li>
+                                            <li class="info-list__item">게시판 생성 및 설정</li>
                                             <li class="info-list__item">
-                                                쇼핑몰 운영 서비스 내용<span class="info-list__sub"
-                                                    >(일 최대 6개 - 높이 5000px 기준)</span
-                                                >
+                                                도메인 연결 / 결제 시스템 등록 / SSL 보안 인증
                                             </li>
-                                            <li class="info-list__item">
-                                                쇼핑몰 운영 서비스 내용<span class="info-list__sub"
-                                                    >(일 최대 4개 - 1000*1000 기준)</span
-                                                >
-                                            </li>
-                                            <li class="info-list__item">쇼핑몰 운영 서비스 내용</li>
+                                            <li class="info-list__item">SNS연동, SEO 설정</li>
                                         </ul>
                                         <h2 class="service-list__title">쇼핑몰 운영</h2>
                                     </li>
                                 </ul>
+                            </div>
+                            <div class="swiper-slide">
                                 <ul class="service-list service-list--vivid">
                                     <li class="service-list__item">
                                         <ul class="info-list">
                                             <li class="info-list__item">
-                                                마케팅 서비스 내용<span class="info-list__sub"
-                                                    >(영업일 기준 5~10일 소요)</span
+                                                인스타그램 홍보용 이미지 제작<span class="info-list__sub"
+                                                    >(일 최대 6개)</span
                                                 >
                                             </li>
-                                            <li class="info-list__item">
-                                                마케팅 서비스 내용<span class="info-list__sub"
-                                                    >(일 최대 6개 - 높이 5000px 기준)</span
-                                                >
-                                            </li>
-                                            <li class="info-list__item">
-                                                마케팅 서비스 내용<span class="info-list__sub"
-                                                    >(일 최대 4개 - 1000*1000 기준)</span
-                                                >
-                                            </li>
-                                            <li class="info-list__item">마케팅 서비스 내용</li>
+                                            <li class="info-list__item">유튜브 홍보용 영상 제작</li>
                                         </ul>
                                         <h2 class="service-list__title">마케팅</h2>
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="btn">
-                            <button class="btn-arrow btn-arrow--prev">
-                                <div class="btn-arrow__arrow btn-arrow__arrow--prev"></div>
-                            </button>
-                            <button class="btn-arrow btn-arrow--next">
-                                <div class="btn-arrow__arrow btn-arrow__arrow--next"></div>
-                            </button>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
                     </div>
                 </div>
             </section>
             <div class="content__banner">
                 <h2 class="content__banner-message">
-                    <span class="content__banner-message--main content__banner-message--none"
+                    <span class="content__banner-message--main"
                         >“쇼핑몰 관리는 djain에 맡기시고 핵심 업무에 집중하세요.”</span
                     >
-                    <span class="content__banner-message--sub">효율적인 운영은 수익을 높이는 지름길입니다.</span>
+                    <span class="content__banner-message--sub content__banner-message--none"
+                        >효율적인 운영은 수익을 높이는 지름길입니다.</span
+                    >
                 </h2>
             </div>
             <section class="content"></section>
         </main>
     </body>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            effect: 'cards',
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+                clickable: true
+            },
+            cardsEffect: {
+                slideShadows: false
+            }
+        });
+    </script>
 </html>

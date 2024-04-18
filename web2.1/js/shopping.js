@@ -5,17 +5,18 @@ $(function () {
         let firstList = $('.service-list').eq(0);
         let secondList = $('.service-list').eq(1);
 
-        secondList.addClass('right-in');
-        firstList.removeClass('right-in');
-
-        $('.service-list-wrap').append(firstList);
+        firstList
+            .addClass('fade-out')
+            .delay(200)
+            .queue(function () {
+                $('.service-list-wrap').append(firstList);
+            });
+        secondList.addClass('fade-in');
     });
 
     $('.btn-arrow--prev').click(function () {
         let lastList = $('.service-list').eq(2);
         let secondList = $('.service-list').eq(1);
-
-        secondList.addClass('right-in');
 
         $('.service-list-wrap').prepend(lastList);
     });

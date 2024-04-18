@@ -95,30 +95,12 @@ body {
   src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream9.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream9.woff) format("woff");
   font-display: swap; }
 
-.right-in {
-  animation: rightIn 1s; }
-
-.left-in {
-  animation: leftIn 1s; }
-
-@keyframes rightIn {
-  from {
-    left: 0.5rem; }
-  to {
-    left: 0; } }
-
-@keyframes lefttIn {
-  from {
-    left: -0.5rem; }
-  to {
-    left: 0; } }
-
 .btn {
   position: absolute;
   width: 84.5rem;
   height: 100%;
   right: 0;
-  z-index: 4; }
+  z-index: 5; }
 
 .btn-arrow {
   position: absolute;
@@ -230,31 +212,13 @@ body {
     background-color: #444; }
 
 .list {
-  position: relative; }
-
-.service-list-wrap {
   position: relative;
-  width: 88rem;
-  display: flex;
-  align-items: center;
-  transition: all 1s; }
+  overflow: hidden; }
 
 .service-list {
-  position: absolute;
+  width: 64rem;
   padding: 3rem;
   border-radius: 2rem; }
-  .service-list:nth-child(1) {
-    position: relative;
-    z-index: 3;
-    left: 0; }
-  .service-list:nth-child(2) {
-    padding: 2rem;
-    z-index: 2;
-    left: 12rem; }
-  .service-list:nth-child(3) {
-    padding: 0.9rem 1.5rem 0.9rem 0.9rem;
-    z-index: 1;
-    left: 24rem; }
   .service-list--dark {
     background-color: #3c0092; }
   .service-list--primary {
@@ -268,14 +232,15 @@ body {
   .service-list__title {
     color: #ffffff;
     width: 8rem;
+    margin-right: 1rem;
     font-size: 2.2rem;
     text-shadow: 0px 1px 1px #3c0092; }
 
 .info-list {
   background-color: #ffffff;
   width: 48rem;
+  height: 19rem;
   padding: 2rem;
-  margin-right: 2rem;
   border-radius: 2rem; }
   .info-list__item {
     font-family: "SCoreDream", sans-serif;
@@ -299,28 +264,36 @@ body {
     background-color: #3c0092;
     text-align: center;
     position: relative; }
-  .content__banner-message--main {
-    font-family: "SCoreDream", sans-serif;
-    letter-spacing: 0.1rem;
-    font-size: 2.2rem;
-    font-weight: 500;
-    position: relative; }
-    .content__banner-message--main::after {
-      content: '';
+  .content__banner-message {
+    display: inline-block;
+    margin-right: 3rem; }
+    .content__banner-message--main {
+      position: relative;
+      font-family: "SCoreDream", sans-serif;
+      letter-spacing: 0.1rem;
+      font-size: 2.2rem;
+      font-weight: 500;
+      position: relative;
+      z-index: 2; }
+    .content__banner-message--sub {
+      position: relative;
+      font-weight: 300;
       display: block;
-      position: absolute;
-      width: 15rem;
-      height: 30rem;
-      top: -600%;
-      right: -45%;
-      background-image: url(../img/main-content.png);
-      background-size: contain;
-      background-repeat: no-repeat; }
-  .content__banner-message--sub {
-    font-weight: 300;
-    display: block; }
-  .content__banner-message--none::after {
-    display: none; }
+      z-index: 1; }
+      .content__banner-message--sub::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 15rem;
+        height: 27rem;
+        top: -600%;
+        right: -28%;
+        background-image: url(../img/main-content.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 1; }
+    .content__banner-message--none::after {
+      display: none; }
   .content__inner {
     padding: 6rem;
     text-align: center; }
@@ -421,7 +394,7 @@ body {
 .content--wide {
   padding: 0;
   background-color: #6200ee;
-  padding-top: 13rem; }
+  padding-top: 8rem; }
 
 .content--purple {
   background-color: #6200ee; }
