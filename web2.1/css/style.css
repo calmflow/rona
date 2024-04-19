@@ -255,11 +255,12 @@ body {
     margin-left: 0.5rem; }
 
 .item-list {
-  width: 20rem;
+  width: 19rem;
   padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 2rem; }
   .item-list__item {
