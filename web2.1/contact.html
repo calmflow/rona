@@ -1,117 +1,168 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="google-site-verification" content="XBvYJ6r9yMoMfRXF2mzUAG2KR7xXq6ra235MKBz1iOk" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="디자인웹에이전시, 디자인웹에이전시 contact">
-    <meta name="robots" content="index,follow">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="디자인웹에이전시 contact">
-    <meta property="og:description" content="디자인웹에이전시, 디자인웹에이전시 contact">
-    <meta property="og:image" content="http://djainweb.co.kr/img/top_logo.png">
-    <meta property="og:url" content="http://djainweb.co.kr">
-    <link rel="icon" href="/img/favicon_io/favicon.ico">
-    <title>디자인웹에이전시 | CONTACT</title>
-    <link rel="icon" href="/img/favicon_io/favicon.ico">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/main.css">  
-    <link rel="stylesheet" href="css/contact.css">  
-    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="js/common.js"></script>
-</head>
-<body>
-    <header id="header">
-        <h1 class="top_logo">
-            <a href="index.html"><img src="img/logo.png" alt="디자인웹에이전시"></a>
-            디자인웹에이전시
-        </h1>
-        <button class="gnb_btn">
-            <span class="span_first"></span>
-            <span class="span_last"></span>
-        </button>
-        <nav class="gnb">
-            <ul>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="service.html">SERVICE</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="contact">
-        <div class="bg-box">
-            <video src="video/cover3.mp4" autoplay muted loop></video>
-        </div>
-        <form name="contactform" method="post" action="send_email.php" class="info-box">
-            <div class="heading-box">
-                <h3 class="heading-primary">CONTACT</h3>
-                <h4 class="heading-primary-sub">부담없이 문의를 남겨주세요. 친절히 상담해드립니다.</h4>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="google-site-verification" content="XBvYJ6r9yMoMfRXF2mzUAG2KR7xXq6ra235MKBz1iOk" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="디자인웹에이전시, 디자인웹에이전시 contact" />
+        <meta name="robots" content="index,follow" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="디자인웹에이전시 contact" />
+        <meta property="og:description" content="디자인웹에이전시, 디자인웹에이전시 contact" />
+        <meta property="og:image" content="http://djainweb.co.kr/img/top_logo.png" />
+        <meta property="og:url" content="http://djainweb.co.kr" />
+        <link rel="icon" href="/img/favicon_io/favicon.ico" />
+        <title>디자인웹에이전시 | CONTACT</title>
+        <link rel="icon" href="/img/favicon_io/favicon.ico" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/contact.css" />
+        <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+        <script src="js/contact.js"></script>
+        <script src="js/common.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <h1 class="top_logo">
+                <a href="index.html"><img src="img/logo.png" alt="디자인웹에이전시" /></a>
+                디자인웹에이전시
+            </h1>
+            <button class="gnb_btn">
+                <span class="span_first"></span>
+                <span class="span_last"></span>
+            </button>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="contact">
+            <div class="bg-box">
+                <video src="video/cover3.mp4" autoplay muted loop></video>
             </div>
-            <div class="info-default">
-                <div class="info-default--personal">
-                    <label for="first_name">Name</label><input type="text" id="first_name" name="first_name" placeholder="성함을 입력해주세요." onfocus="this.placeholder = ''" onblur="this.placeholder = '성함을 입력해주세요.'" required>
+            <form name="contactform" method="post" action="send_email.php" class="info-box">
+                <div class="heading-box">
+                    <h3 class="heading-primary">CONTACT</h3>
+                    <h4 class="heading-primary-sub">부담없이 문의를 남겨주세요. 친절히 상담해드립니다.</h4>
                 </div>
-                <div class="info-default--personal">
-                    <label for="email">Email</label><input type="text"  id="email" name="email"  placeholder="이메일 주소를 입력해주세요." onfocus="this.placeholder = ''" onblur="this.placeholder = '이메일 주소를 입력해주세요.'" required>
-                </div>
-                <div class="info-default--personal">
-                    <label for="telephone">Phone</label><input type="text" id="telephone" name="telephone" placeholder="전화번호를 입력해주세요." onfocus="this.placeholder = ''" onblur="this.placeholder = '연락 가능한 전화번호를 입력해주세요.'" required>
-                </div>
-                <label class="purpose">문의 분야</label>
-                <div class="info-default--purpose">
-                    <div class="info-default--purpose-box"><input type="radio" id="responsive" name="group" checked="checked"><label for="responsive">반응형 홈페이지</label></div>
-                    <div class="info-default--purpose-box"><input type="radio" id="mobile" name="group"><label for="mobile">모바일 홈페이지</label></div>
-                    <div class="info-default--purpose-box"><input type="radio" id="commerce" name="group"><label for="commerce">쇼핑몰</label></div>
-                    <div class="info-default--purpose-box"><input type="radio" id="management" name="group"><label for="management">웹사이트 운영&middot;관리</label></div>
-                </div>
-            </div>
-            <div class="info-user-input"> 
-                <textarea name="content" id="comments" name="comments"  cols="30" rows="5" placeholder="문의 내용을 입력해주세요." onfocus="this.placeholder=''" onblur="this.placeholder = '문의 내용을 입력해주세요.'"></textarea>
-            </div>
-            <div class="agreement-box">
-                <h3 class="agreement_title">개인정보처리방침 동의 (필수)<span>*</span></h3>
-                <div class="agreement_content">
-                    ▶ 개인정보의 수집 및 이용목적<br>
-                    - 서비스 이용에 따른 본인식별, 실명확인, 가입의사 확인, 연령제한 서비스 이용<br>
-                    - 신규 서비스 등 최신정보 안내 및 개인맞춤서비스 제공을 위한 자료<br>
-                    - 기타 원활한 양질의 서비스 제공 등<br>
-                </div>
-                <div class="agreement_check">
-                    <div class="check_inner">
-                        <input type="checkbox" id="agree_check" name="agree"  value="agree" ><label for="agree_check">위 개인정보 수집 및 이용에 동의합니다.</label>
+                <div class="info-default">
+                    <div class="info-default--personal">
+                        <label for="first_name">Name</label
+                        ><input
+                            type="text"
+                            id="first_name"
+                            name="first_name"
+                            placeholder="성함을 입력해주세요."
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = '성함을 입력해주세요.'"
+                            required
+                        />
                     </div>
-                    <input type="submit" value="SUBMIT">
+                    <div class="info-default--personal">
+                        <label for="email">Email</label
+                        ><input
+                            type="text"
+                            id="email"
+                            name="email"
+                            placeholder="이메일 주소를 입력해주세요."
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = '이메일 주소를 입력해주세요.'"
+                            required
+                        />
+                    </div>
+                    <div class="info-default--personal">
+                        <label for="telephone">Phone</label
+                        ><input
+                            type="text"
+                            id="telephone"
+                            name="telephone"
+                            placeholder="전화번호를 입력해주세요."
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = '연락 가능한 전화번호를 입력해주세요.'"
+                            required
+                        />
+                    </div>
+                    <label class="purpose">문의 분야</label>
+                    <div class="info-default--purpose">
+                        <div class="info-default--purpose-box">
+                            <input type="radio" id="responsive" name="group" checked="checked" /><label for="responsive"
+                                >반응형 홈페이지</label
+                            >
+                        </div>
+                        <div class="info-default--purpose-box">
+                            <input type="radio" id="mobile" name="group" /><label for="mobile">모바일 홈페이지</label>
+                        </div>
+                        <div class="info-default--purpose-box">
+                            <input type="radio" id="commerce" name="group" /><label for="commerce">쇼핑몰</label>
+                        </div>
+                        <div class="info-default--purpose-box">
+                            <input type="radio" id="management" name="group" /><label for="management"
+                                >웹사이트 운영&middot;관리</label
+                            >
+                        </div>
+                    </div>
                 </div>
+                <div class="info-user-input">
+                    <textarea
+                        name="content"
+                        id="comments"
+                        name="comments"
+                        cols="30"
+                        rows="5"
+                        placeholder="문의 내용을 입력해주세요."
+                        onfocus="this.placeholder=''"
+                        onblur="this.placeholder = '문의 내용을 입력해주세요.'"
+                    ></textarea>
+                </div>
+                <div class="agreement-box">
+                    <h3 class="agreement_title">개인정보처리방침 동의 (필수)<span>*</span></h3>
+                    <div class="agreement_content">
+                        ▶ 개인정보의 수집 및 이용목적<br />
+                        - 서비스 이용에 따른 본인식별, 실명확인, 가입의사 확인, 연령제한 서비스 이용<br />
+                        - 신규 서비스 등 최신정보 안내 및 개인맞춤서비스 제공을 위한 자료<br />
+                        - 기타 원활한 양질의 서비스 제공 등<br />
+                    </div>
+                    <div class="agreement_check">
+                        <div class="check_inner">
+                            <input type="checkbox" id="agree_check" name="agree" value="agree" /><label
+                                for="agree_check"
+                                >위 개인정보 수집 및 이용에 동의합니다.</label
+                            >
+                        </div>
+                        <input type="submit" value="SUBMIT" />
+                    </div>
+                </div>
+            </form>
+        </section>
+        <footer id="footer">
+            <h2 class="top_logo">
+                <a href="/index.html"><img src="img/logo_top_w.png" alt="디자인웹에이전시" /></a>
+            </h2>
+            <div class="footer_right">
+                <address>
+                    <span>Address</span> : 인천광역시 미출홀구 신기길 58번길 58 <span>Tel</span> : 032-715-7127
+                    <span>E-mail</span> : amabileys@naver.com Copyright &copy; djainweb.co.kr All right reserved.
+                </address>
+                <address class="mob">
+                    <span>Address</span> : 인천광역시 미출홀구 신기길 58번길 58 <br />
+                    <span>Tel</span> : 032-715-7127 <br />
+                    <span>E-mail</span> : amabileys@naver.com <br />
+                    Copyright &copy; djainweb.co.kr All right reserved.
+                </address>
             </div>
-        </form>
-    </section>
-    <footer id="footer">
-        <h2 class="top_logo"><a href="/index.html"><img src="img/logo_top_w.png" alt="디자인웹에이전시"></a></h2>
-        <div class="footer_right">
-            <address>
-            <span>Address</span> : 인천광역시 미출홀구 신기길 58번길 58 
-            <span>Tel</span> : 032-715-7127 
-            <span>E-mail</span> : amabileys@naver.com 
-            Copyright &copy; djainweb.co.kr All right reserved.
-            </address>
-            <address class="mob">
-                <span>Address</span> : 인천광역시 미출홀구 신기길 58번길 58 <br>
-                <span>Tel</span> : 032-715-7127 <br>
-                <span>E-mail</span> : amabileys@naver.com <br>
-                Copyright &copy; djainweb.co.kr All right reserved.
-            </address>
-        </div>
-    </footer>
-    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
-<script type="text/javascript">
-if(!wcs_add) var wcs_add = {};
-wcs_add["wa"] = "1bb1a39f88ff420";
-if(window.wcs) {
-wcs_do();
-}
-</script>
-</body>
+        </footer>
+        <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+        <script type="text/javascript">
+            if (!wcs_add) var wcs_add = {};
+            wcs_add['wa'] = '1bb1a39f88ff420';
+            if (window.wcs) {
+                wcs_do();
+            }
+        </script>
+    </body>
 </html>

@@ -58,3 +58,35 @@
         margin-left: 0.5rem;
     }
 }
+
+.item-list {
+    width: 20rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+
+    &__item {
+        display: inline-block;
+        &:not(:last-child) {
+            margin-bottom: 6rem;
+        }
+    }
+
+    &__img {
+        width: 3rem;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        color: #ffd500;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        color: #fff;
+    }
+}
