@@ -50,21 +50,40 @@
             font-weight: 300;
             display: block;
             z-index: 1;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 12rem;
+                height: 10rem;
+                top: -760%;
+                right: -22%;
+                background-image: url(../img/light.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                z-index: 1;
+                opacity: var(--opacity, 0);
+                animation: var(--animation) 0.5s;
+                transition: all 0.5s;
+            }
             &::after {
                 content: '';
                 display: block;
                 position: absolute;
                 width: 15rem;
-                height: 27rem;
-                top: -600%;
+                height: 24rem;
+                top: -500%;
                 right: -28%;
-                background-image: url(../img/main-content.png);
+                background-image: url(../img/person.png);
                 background-size: contain;
                 background-repeat: no-repeat;
                 z-index: 1;
             }
         }
         &--none {
+            &::before {
+                display: none;
+            }
             &::after {
                 display: none;
             }

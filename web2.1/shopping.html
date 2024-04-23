@@ -43,7 +43,7 @@
                     <img src="img/intro.png" alt="쇼핑몰 관리 일러스트" class="intro__img" />
                 </div>
             </section>
-            <section class="content content--wide">
+            <section class="content content--wide" id="trigger1">
                 <div class="content__banner">
                     <h2 class="content__banner-message">
                         <span class="content__banner-message--main"
@@ -436,5 +436,20 @@
     <!-- ScrollMgaic Option -->
     <script>
         let controller = new ScrollMagic.Controller();
+
+        let tween1 = TweenMax.to('.content__banner-message--sub', 1, {
+            '--opacity': '1',
+            '--animation': 'bounce',
+            delay: 0.5
+        });
+
+        let scene = new ScrollMagic.Scene({
+            triggerElement: '#trigger1'
+        })
+            .setTween(tween1)
+            .addTo(controller)
+            .addIndicators({
+                name: '1'
+            });
     </script>
 </html>
