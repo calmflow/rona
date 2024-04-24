@@ -2,133 +2,128 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" container="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/common.css" />
         <link rel="stylesheet" href="css/swiper-bundle.css" />
+        <link rel="stylesheet" href="css/animate.css" />
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-
         <script src="js/shopping.js"></script>
     </head>
     <body>
         <main>
-            <section class="title">
-                <h1 class="title__heading-primary">
-                    <span class="title__heading-primary--main-normal"
-                        >쇼핑몰 관리 <span class="title__heading-primary--main-yellow">구독</span> 서비스</span
-                    >
-                    <span class="title__heading-primary--sub">디자인, 퍼블리싱, 쇼핑몰 관리를 한번에 해결하세요.</span>
+            <section class="container" name="heading">
+                <h1 class="heading-primary">
+                    쇼핑몰 관리 <span class="heading-primary--yellow">구독</span> 서비스
+                    <span class="heading-primary--sub">디자인, 퍼블리싱, 쇼핑몰 관리를 한번에 해결하세요.</span>
                 </h1>
             </section>
-            <section class="intro">
-                <div class="intro__text-wrap">
-                    <h2 class="intro__heading-secondary">
-                        쇼핑몰 오픈이 막막하신가요?<br />
-                        오픈은 했는데, 관리와 업데이트가 어려우신가요?
-                    </h2>
-                    <p class="intro__description">
-                        직원 고용은 어렵고,<br />
-                        매번 외주 업체를 찾고 자료를 보내는 것도 번거롭죠.<br />
-                        원활하지 못한 소통, 진행 중 추가되는 비용, 낮은 퀄리티 문제..<br />
-                        신경쓸 일, 감수해야할 리스크가 크다고 생각하셨다면,
-                    </p>
-                </div>
-                <div class="intro__img-wrap">
-                    <img src="img/intro.png" alt="쇼핑몰 관리 일러스트" class="intro__img" />
+            <section class="container container--secondary" name="intro">
+                <div class="text-box">
+                    <div class="text-box__text-wrap">
+                        <h2 class="text-box__heading">
+                            <span class="text-box__heading--primary">쇼핑몰 오픈이 막막하신가요?</span>
+                            <span class="text-box__heading--secondary">관리와 업데이트가 어려우신가요?</span>
+                        </h2>
+                        <p class="text-box__description">
+                            <span class="text-box__text-parimary">직원 고용은 어렵고,</span>
+                            <span class="text-box__text-secondary"
+                                >매번 외주 업체를 찾아 자료를 보내기도 번거롭죠.</span
+                            >
+                            <span class="text-box__text-tertiary"
+                                >원활하지 못한 소통, 낮은 퀄리티, 추가 비용이 걱정되셨다면..</span
+                            >
+                        </p>
+                    </div>
+                    <img src="img/intro.png" alt="쇼핑몰 관리 일러스트" class="text-box__img" />
                 </div>
             </section>
-            <section class="content content--wide" id="trigger1">
-                <div class="content__banner">
-                    <h2 class="content__banner-message">
-                        <span class="content__banner-message--main"
+            <section class="container container--top" name="advantage" id="trigger1">
+                <div class="banner">
+                    <h2 class="banner__message">
+                        <span class="banner__message banner__message--main"
                             >“djain의 쇼핑몰 관리 구독 서비스를 이용해보세요.”</span
                         >
-                        <span class="content__banner-message--sub"
+                        <span class="banner__message banner__message--sub"
                             >18년차 웹 전문가가 모든 업무에 참여하고 함께 진행합니다.</span
                         >
                     </h2>
                 </div>
-                <div class="content__inner">
-                    <h2 class="section-title">djain 쇼핑몰 관리 구독 서비스의 장점</h2>
-                    <ul class="content__list content__list-row">
-                        <li class="content__card">
-                            <img src="img/main-item01.png" alt="빠른소통 일러스트" class="content__card-img" />
-                            <h3 class="content__card-title">1:1 빠른 소통</h3>
-                            <p class="content__card-description">
-                                전담 매니저를 통해 빠르고 원활한 의사소통이 가능합니다.
-                            </p>
+                <div class="container__inner">
+                    <h2 class="heading-secondary">djain 쇼핑몰 관리 구독 서비스의 장점</h2>
+                    <ul class="card-list">
+                        <li class="card">
+                            <img src="img/main-item01.png" alt="빠른소통 일러스트" class="card__img" />
+                            <h3 class="card__title">1:1 빠른 소통</h3>
+                            <p class="card__description">전담 매니저를 통해 빠르고 원활한 의사소통이 가능합니다.</p>
                         </li>
-                        <li class="content__card">
-                            <img src="img/main-item02.png" alt="무제한 수정 일러스트" class="content__card-img" />
-                            <h3 class="content__card-title">무제한 수정</h3>
-                            <p class="content__card-description">수정 횟수 제한 없이 바로 수정이 가능합니다.</p>
+                        <li class="card">
+                            <img src="img/main-item02.png" alt="무제한 수정 일러스트" class="card__img" />
+                            <h3 class="card__title">무제한 수정</h3>
+                            <p class="card__description">수정 횟수 제한 없이 바로 수정이 가능합니다.</p>
                         </li>
-                        <li class="content__card">
-                            <img src="img/main-item03.png" alt="무제한 수정 일러스트" class="content__card-img" />
-                            <h3 class="content__card-title">연속적 관리</h3>
-                            <p class="content__card-description">
-                                지속적 파트너로서 고객의 사업을 이해하고 작업합니다.
-                            </p>
+                        <li class="card">
+                            <img src="img/main-item03.png" alt="무제한 수정 일러스트" class="card__img" />
+                            <h3 class="card__title">연속적 관리</h3>
+                            <p class="card__description">지속적 파트너로서 고객의 사업을 이해하고 작업합니다.</p>
                         </li>
-                        <li class="content__card">
-                            <img src="img/main-item04.png" alt="무제한 수정 일러스트" class="content__card-img" />
-                            <h3 class="content__card-title">우수한 디자인</h3>
-                            <p class="content__card-description">
-                                18년차 웹 전문가의 안목으로 작업물의 퀄리티를 검증합니다.
-                            </p>
+                        <li class="card">
+                            <img src="img/main-item04.png" alt="무제한 수정 일러스트" class="card__img" />
+                            <h3 class="card__title">우수한 디자인</h3>
+                            <p class="card__description">18년차 웹 전문가의 안목으로 작업물의 퀄리티를 검증합니다.</p>
                         </li>
                     </ul>
                 </div>
             </section>
-            <section class="content">
-                <h2 class="section-title">
-                    <span class="section-title section-title--purple">직원고용 대비</span>
-                    <span class="section-title section-title--bg-purple">비용 절감 효과</span>
+            <section class="container container--secondary" name="cost">
+                <h2 class="heading-secondary">
+                    <span class="heading-secondary--purple">직원고용 대비</span>
+                    <span class="heading-secondary--bg-purple">비용 절감 효과</span>
                 </h2>
-                <div class="content__inner--row">
-                    <div class="content__list-border--white">
-                        <div class="content__list-border--purple">
-                            <ul class="content__list-colum content__list-colum--purple">
-                                <li class="content__list-title content__list-title--purple">djain 서비스 구독</li>
-                                <li class="content__list-item--purple">월 99만원</li>
-                                <li class="content__list-item--purple">무제한 소통</li>
-                                <li class="content__list-item--purple">최소 한달 계약 가능</li>
-                                <li class="content__list-item--purple">
+                <div class="container__inner--row">
+                    <div class="border border--white">
+                        <div class="border border--purple">
+                            <ul class="big-card--purple">
+                                <li class="big-card__title big-card__title--purple">djain 서비스 구독</li>
+                                <li class="big-card__item--purple">월 99만원</li>
+                                <li class="big-card__item--purple">무제한 소통</li>
+                                <li class="big-card__item--purple">최소 한달 계약 가능</li>
+                                <li class="big-card__item--purple">
                                     18년차 웹전문가가 검증한<br />
                                     디자이너들 보유
                                 </li>
-                                <li class="content__list-item--purple">추가지출 없음</li>
+                                <li class="container__list-item--purple">추가지출 없음</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="content__img-wrap">
-                        <img src="img/vs-icon.png" alt="vs아이콘" class="content__img" />
+                    <div class="container__img-wrap">
+                        <img src="img/vs-icon.png" alt="vs아이콘" class="container__img" />
                     </div>
-                    <ul class="content__list-colum content__list-colum--gray">
-                        <li class="content__list-title content__list-title--gray">직원 고용</li>
-                        <li class="content__list-item--gray">월 200만원 + @ (신입기준)</li>
-                        <li class="content__list-item--gray">무제한 소통</li>
-                        <li class="content__list-item--gray">1년 계약 (정규직 기준)</li>
-                        <li class="content__list-item--gray">디자인 역량 미달 위험</li>
-                        <li class="content__list-item--gray">
+                    <ul class="big-card--gray">
+                        <li class="big-card__title big-card__title--gray">직원 고용</li>
+                        <li class="big-card__item--gray">월 200만원 + @ (신입기준)</li>
+                        <li class="big-card__item--gray">무제한 소통</li>
+                        <li class="big-card__item--gray">1년 계약 (정규직 기준)</li>
+                        <li class="big-card__item--gray">디자인 역량 미달 위험</li>
+                        <li class="big-card__item--gray">
                             업무에 필요한 시설과 장비,<br />
                             4대보험, 퇴직금..
                         </li>
                     </ul>
                 </div>
             </section>
-            <section class="content content--primary">
-                <h2 class="section-title">
-                    외주 업체보다 <span class="section-title--bg-purple">원할한 소통,</span>
-                    <span class="section-title--bg-purple">빠르고 제한없는 수정</span>
+            <section class="container" name="chat">
+                <h2 class="heading-secondary">
+                    외주 업체보다 <span class="heading-secondary--bg-purple">원할한 소통,</span>
+                    <span class="heading-secondary--bg-purple">빠르고 제한없는 수정</span>
                 </h2>
-                <div class="content__inner--row">
+                <div class="container__inner--row">
                     <ul class="screen screen--purple">
                         <li class="screen__item">
                             <div class="screen__item-inner screen__item-inner--right">
@@ -167,8 +162,8 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="content__img-wrap">
-                        <img src="img/vs-icon-wh.png" alt="vs아이콘" class="content__img" />
+                    <div class="container__img-wrap">
+                        <img src="img/vs-icon-wh.png" alt="vs아이콘" class="container__img" />
                     </div>
                     <ul class="screen">
                         <li class="screen__item screen__item--gray">
@@ -228,8 +223,8 @@
                     </ul>
                 </div>
             </section>
-            <section class="content">
-                <div class="content__inner--row">
+            <section class="container container--white" name="service">
+                <div class="container__inner--row">
                     <div class="section-description">
                         <h2 class="section-description__title section-description__title--box">업무 내용</h2>
                         <p class="section-description__sub">구독 서비스가 제공하는<br />다양한 업무 내용</p>
@@ -300,23 +295,21 @@
                     </div>
                 </div>
             </section>
-            <div class="content__banner content__banner--primary">
-                <h2 class="content__banner-message">
-                    <span class="content__banner-message--main"
-                        >“쇼핑몰 관리는 djain에 맡기시고 핵심 업무에 집중하세요.”</span
-                    >
-                    <span class="content__banner-message--sub content__banner-message--none"
+            <div class="banner banner--primary">
+                <h2 class="banner__message">
+                    <span class="banner__message--main">“쇼핑몰 관리는 djain에 맡기시고 핵심 업무에 집중하세요.”</span>
+                    <span class="banner__message--sub banner__message--none"
                         >효율적인 운영은 수익을 높이는 지름길입니다.</span
                     >
                 </h2>
             </div>
-            <section class="content content--dark">
-                <h2 class="section-title">
-                    문의하기<span class="section-title__sub"
+            <section class="container container--tertiary" name="contact">
+                <h2 class="heading-secondary">
+                    문의하기<span class="heading-secondary__sub"
                         >궁금한 점이 있으시면 망설이지 마시고 바로 연락주세요. 자세히 상담해드리겠습니다.</span
                     >
                 </h2>
-                <div class="content__inner content__inner--stretch">
+                <div class="container__inner container__inner--stretch">
                     <ul class="item-list">
                         <li class="item-list__item">
                             <img src="img/Phone.png" alt="전화아이콘" class="item-list__img" />
@@ -437,19 +430,46 @@
     <script>
         let controller = new ScrollMagic.Controller();
 
-        let tween1 = TweenMax.to('.content__banner-message--sub', 1, {
-            '--opacity': '1',
-            '--animation': 'bounce',
-            delay: 0.5
+        // tween
+        let tween1 = TweenMax.to('.banner__message--main', 1, {
+            '--animation': 'tada'
         });
 
-        let scene = new ScrollMagic.Scene({
+        let tween2 = TweenMax.to('.banner__message--sub', 1, {
+            '--animation2': 'fadeIn',
+            delay: 1
+        });
+
+        let tween3 = TweenMax.to('.card', 1, {
+            '--animation': 'bounceInLeft',
+            delay: 1
+        });
+
+        // scen
+        let scene1 = new ScrollMagic.Scene({
             triggerElement: '#trigger1'
         })
             .setTween(tween1)
             .addTo(controller)
             .addIndicators({
                 name: '1'
+            });
+
+        let scene2 = new ScrollMagic.Scene({
+            triggerElement: '#trigger1'
+        })
+            .setTween(tween2)
+            .addTo(controller)
+            .addIndicators({
+                name: '2'
+            });
+        let scene3 = new ScrollMagic.Scene({
+            triggerElement: '#trigger1'
+        })
+            .setTween(tween2)
+            .addTo(controller)
+            .addIndicators({
+                name: '2'
             });
     </script>
 </html>

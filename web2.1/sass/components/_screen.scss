@@ -3,7 +3,7 @@
 
     &--purple {
         padding: 3rem;
-        background-color: $dark-purple;
+        background-color: $color-tertiary;
     }
 
     &__item {
@@ -60,7 +60,7 @@
         &--filled {
             background-color: $color-primary;
             border: 2px solid $color-primary;
-            text-shadow: 0px 2px 1px $dark-purple;
+            text-shadow: 0px 2px 1px $color-tertiary;
 
             color: $color-white;
             @include chat-right;
