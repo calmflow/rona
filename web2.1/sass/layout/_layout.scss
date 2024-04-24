@@ -65,17 +65,7 @@
         font-weight: 500;
         margin-bottom: 2rem;
 
-        & span {
-            display: block;
-            animation: bounce 1s 1s forwards;
-            opacity: 0;
-        }
-
-        &--primary {
-        }
-
-        &--secondary {
-        }
+        animation: bounce 1s 1s forwards;
     }
 
     &__img {

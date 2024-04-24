@@ -99,7 +99,8 @@ body {
   font-size: 5rem;
   font-weight: 600;
   color: #ffffff;
-  text-shadow: 0px 2px 1px #3c0092; }
+  text-shadow: 0px 2px 1px #3c0092;
+  animation: fadeInUp 1s; }
   .heading-primary--yellow {
     color: #ffd500; }
   .heading-primary--sub {
@@ -354,11 +355,8 @@ body {
     font-size: 2.6rem;
     font-family: "SCoreDream", sans-serif;
     font-weight: 500;
-    margin-bottom: 2rem; }
-    .text-box__heading span {
-      display: block;
-      animation: bounce 1s 1s forwards;
-      opacity: 0; }
+    margin-bottom: 2rem;
+    animation: bounce 1s 1s forwards; }
   .text-box__img {
     width: 45rem; }
   .text-box__description {
