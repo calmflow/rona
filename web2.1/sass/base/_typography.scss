@@ -78,12 +78,15 @@
 }
 
 .heading-primary {
-    font-size: 5rem;
-    font-weight: 600;
-    color: $color-white;
     @include purple-shadow;
 
-    animation: fadeInUp 1s;
+    &--main {
+        display: block;
+        font-size: 5rem;
+        font-weight: 600;
+        color: $color-white;
+        animation: fadeInUp 1s;
+    }
 
     &--yellow {
         color: $color-yellow;
@@ -95,6 +98,9 @@
         font-weight: 500;
         color: $color-white;
         letter-spacing: 0.1rem;
+        opacity: 0;
+
+        animation: fadeInUp 1s 0.8s forwards;
     }
 }
 

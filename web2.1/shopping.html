@@ -20,7 +20,9 @@
         <main>
             <section class="container" name="heading">
                 <h1 class="heading-primary">
-                    쇼핑몰 관리 <span class="heading-primary--yellow">구독</span> 서비스
+                    <span class="heading-primary--main"
+                        >쇼핑몰 관리 <span class="heading-primary--yellow">구독</span> 서비스</span
+                    >
                     <span class="heading-primary--sub">디자인, 퍼블리싱, 쇼핑몰 관리를 한번에 해결하세요.</span>
                 </h1>
             </section>
@@ -45,7 +47,7 @@
                 </div>
             </section>
             <section class="container container--top" name="advantage" id="trigger1">
-                <div class="banner">
+                <div class="banner" id="banner1">
                     <h2 class="banner__message">
                         <span class="banner__message banner__message--main"
                             >“djain의 쇼핑몰 관리 구독 서비스를 이용해보세요.”</span
@@ -55,8 +57,8 @@
                         >
                     </h2>
                 </div>
-                <div class="container__inner">
-                    <h2 class="heading-secondary" id="trigger2">djain 쇼핑몰 관리 구독 서비스의 장점</h2>
+                <div class="container__inner" id="trigger2">
+                    <h2 class="heading-secondary">djain 쇼핑몰 관리 구독 서비스의 장점</h2>
                     <ul class="card-list">
                         <li class="card">
                             <img src="img/main-item01.png" alt="빠른소통 일러스트" class="card__img" />
@@ -81,7 +83,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="container container--secondary" name="cost">
+            <section class="container container--secondary" name="cost" id="trigger3">
                 <h2 class="heading-secondary">
                     <span class="heading-secondary--purple">직원고용 대비</span>
                     <span class="heading-secondary--bg-purple">비용 절감 효과</span>
@@ -98,7 +100,7 @@
                                     18년차 웹전문가가 검증한<br />
                                     디자이너들 보유
                                 </li>
-                                <li class="container__list-item--purple">추가지출 없음</li>
+                                <li class="big-card__item--purple">추가지출 없음</li>
                             </ul>
                         </div>
                     </div>
@@ -295,7 +297,62 @@
                     </div>
                 </div>
             </section>
-            <div class="banner banner--primary">
+            <section class="container container--white container--topless">
+                <div class="text-list">
+                    <div class="text-list__inner">
+                        <h3 class="text-list__title">쇼핑몰 디자인</h3>
+                        <ul class="text-list__list">
+                            <li class="text-list__item">
+                                <span class="text-list__text--main">쇼핑몰 메인·서브 페이지 디자인</span>
+                                <span class="text-list__text--sub">(영업일 기준 5~10일 소요)</span>
+                            </li>
+                            <li class="text-list__item">
+                                <span class="text-list__text--main">제품 상세페이지 제작</span>
+                                <span class="text-list__text--sub">(일 최대 6개)</span>
+                            </li>
+                            <li class="text-list__item">
+                                <span class="text-list__text--main">쇼핑몰 홍보용 이미지 제작</span>
+                                <span class="text-list__text--sub">(일 최대 4개)</span>
+                            </li>
+                            <li class="text-list__item">
+                                <span class="text-list__text--main">팝업 및 배너 제작</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-list__inner">
+                        <h3 class="text-list__title">쇼핑몰 운영</h3>
+                        <ul class="text-list__list">
+                            <li class="text-list__item">
+                                <span class="text-list__text--main"
+                                    >상품 등록 / 상품 옵션 설정 / 카테고리 분류 및 진열</span
+                                >
+                            </li>
+                            <li class="text-list__item">
+                                <span class="text-list__text--main">도메인 연결 / 결제 시스템 등록 / SSL 보안인증</span>
+                            </li>
+                            <li class="text-list__item">
+                                <span class="text-list__text--main">게시판 생성 및 설정</span>
+                            </li>
+                            <li class="text-list__item">
+                                <span class="text-list__text--main">SNS연동, 검색엔진최적화</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-list__inner">
+                        <h3 class="text-list__title">마케팅</h3>
+                        <ul class="text-list__list">
+                            <li class="text-list__item">
+                                <span class="text-list__text--main">인스타그램 홍보용 이미지 제작</span>
+                                <span class="text-list__text--sub">(일 최대 6개)</span>
+                            </li>
+                            <li class="text-list__item">
+                                <span class="text-list__text--main">유튜브 홍보용 영상 제작</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="banner banner--primary" id="banner2">
                 <h2 class="banner__message">
                     <span class="banner__message--main">“쇼핑몰 관리는 djain에 맡기시고 핵심 업무에 집중하세요.”</span>
                     <span class="banner__message--sub banner__message--none"
@@ -431,18 +488,26 @@
         let controller = new ScrollMagic.Controller();
 
         // tween
-        let tween1 = TweenMax.to('.banner__message--main', 1, {
+        let tween1 = TweenMax.to('#banner1 .banner__message--main', 1, {
             '--animation': 'tada'
         });
 
-        let tween2 = TweenMax.to('.banner__message--sub', 1, {
+        let tween2 = TweenMax.to('#banner1 .banner__message--sub', 1, {
             '--animation2': 'fadeIn',
-            delay: 1
+            delay: 0.6
         });
 
         let tween3 = TweenMax.to('.card', 1, {
-            '--animation': 'bounceInLeft',
-            delay: 1
+            '--animation': 'fadeInLeft'
+        });
+
+        let tween4 = TweenMax.to('#banner2 .banner__message', 1, {
+            '--animation': 'fadeInUp'
+        });
+
+        let tween5 = TweenMax.to('.border--white', 1, {
+            display: 'block',
+            '--animation': 'fadeIn'
         });
 
         // scen
@@ -469,7 +534,25 @@
             .setTween(tween3)
             .addTo(controller)
             .addIndicators({
-                name: '2'
+                name: '3'
+            });
+
+        let scene4 = new ScrollMagic.Scene({
+            triggerElement: '#banner2'
+        })
+            .setTween(tween4)
+            .addTo(controller)
+            .addIndicators({
+                name: '4'
+            });
+
+        let scene5 = new ScrollMagic.Scene({
+            triggerElement: '#trigger3'
+        })
+            .setTween(tween5)
+            .addTo(controller)
+            .addIndicators({
+                name: '4'
             });
     </script>
 </html>

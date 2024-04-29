@@ -91,3 +91,50 @@
         color: #fff;
     }
 }
+
+.text-list {
+    width: 120rem;
+    margin: 0 auto;
+    span {
+        display: block;
+    }
+
+    &__title {
+        width: 20rem;
+        text-align: left;
+        @include title-style;
+    }
+    &__inner {
+        position: relative;
+        display: flex;
+        border-top: 1px solid #999;
+        padding-top: 3rem;
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+    }
+    &__list {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__item {
+        width: 24%;
+        align-self: flex-start;
+        flex-wrap: nowrap;
+
+        @include content-style;
+        padding: 1rem;
+        background-color: $color-secondary;
+        border-radius: 2rem;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__text--sub {
+        font-size: 1.4rem;
+    }
+}

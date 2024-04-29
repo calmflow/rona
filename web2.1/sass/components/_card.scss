@@ -1,0 +1,105 @@
+.card-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.card {
+    width: 23.5%;
+    text-align: left;
+    background-color: $color-white;
+    color: $color-primary;
+    border-radius: 2rem;
+    padding: 2rem;
+    opacity: 0;
+
+    box-shadow: $shadow-light;
+
+    &__img {
+        width: 40%;
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-family: $font-family-score;
+    }
+
+    &__description {
+        font-size: 1.5rem;
+    }
+
+    &:nth-child(1) {
+        animation: var(--animation) 1s cubic-bezier(0, 0.91, 0, 1.02) forwards;
+        z-index: 4;
+    }
+    &:nth-child(2) {
+        animation: var(--animation) 1s 0.4s cubic-bezier(0, 0.91, 0, 1.02) forwards;
+        z-index: 3;
+    }
+    &:nth-child(3) {
+        animation: var(--animation) 1s 0.8s cubic-bezier(0, 0.91, 0, 1.02) forwards;
+        z-index: 2;
+    }
+    &:nth-child(4) {
+        animation: var(--animation) 1s 1.2s cubic-bezier(0, 0.91, 0, 1.02) forwards;
+        z-index: 1;
+    }
+}
+
+.border {
+    &--white {
+        border-radius: 1rem;
+        border: 0.5rem solid $color-white;
+        box-shadow: $shadow-light;
+    }
+
+    &--purple {
+        border-radius: 1rem;
+        border: 0.5rem solid $light-purple;
+    }
+}
+
+.big-card {
+    &--purple {
+        transition: all 1s;
+        padding: 2rem 3rem;
+        border-radius: 1rem;
+        background-color: $color-white;
+        border: 0.5rem solid $vivid-purple;
+    }
+
+    &--gray {
+        padding: 2.5rem;
+        background-color: $light-gray;
+        box-shadow: $shadow-light;
+    }
+
+    &__title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+
+        &--purple {
+            font-weight: 800;
+            color: $color-primary;
+        }
+
+        &--gray {
+            font-weight: 600;
+            color: $dark-gray;
+        }
+    }
+
+    &__item--purple {
+        font-size: 1.8rem;
+        color: $color-primary;
+        margin: 1rem auto;
+    }
+
+    &__item--gray {
+        font-size: 1.6rem;
+        color: $dark-gray;
+        margin: 1rem auto;
+    }
+}

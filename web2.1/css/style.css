@@ -96,11 +96,13 @@ body {
   font-display: swap; }
 
 .heading-primary {
-  font-size: 5rem;
-  font-weight: 600;
-  color: #ffffff;
-  text-shadow: 0px 2px 1px #3c0092;
-  animation: fadeInUp 1s; }
+  text-shadow: 0px 2px 1px #3c0092; }
+  .heading-primary--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #ffffff;
+    animation: fadeInUp 1s; }
   .heading-primary--yellow {
     color: #ffd500; }
   .heading-primary--sub {
@@ -108,7 +110,9 @@ body {
     font-size: 2rem;
     font-weight: 500;
     color: #ffffff;
-    letter-spacing: 0.1rem; }
+    letter-spacing: 0.1rem;
+    opacity: 0;
+    animation: fadeInUp 1s 0.8s forwards; }
 
 .heading-secondary {
   font-size: 2.2rem;
@@ -313,57 +317,123 @@ body {
     font-size: 1.4rem;
     color: #fff; }
 
-.container {
-  padding: 8rem;
-  background-color: #6200ee;
-  text-align: center; }
-  .container--top {
-    padding: 0;
-    padding-top: 8rem; }
-  .container--secondary {
-    background-color: #f0e9fb; }
-  .container--tertiary {
-    background-color: #3c0092; }
-  .container--white {
-    background-color: #ffffff; }
-  .container__inner {
-    padding: 6rem;
-    text-align: center; }
-  .container__inner--row {
+.text-list {
+  width: 120rem;
+  margin: 0 auto; }
+  .text-list span {
+    display: block; }
+  .text-list__title {
+    width: 20rem;
+    text-align: left;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #3c0092;
+    letter-spacing: 0.1rem;
+    font-family: "SCoreDream", sans-serif; }
+  .text-list__inner {
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center; }
-  .container__inner--stretch {
-    padding: 0;
-    padding-top: 3rem;
+    border-top: 1px solid #999;
+    padding-top: 3rem; }
+    .text-list__inner:not(:last-child) {
+      margin-bottom: 3rem; }
+  .text-list__list {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: stretch; }
-  .container__img-wrap {
-    width: 6rem;
-    align-self: center;
-    margin: 0 3rem; }
-  .container__img {
-    width: 100%; }
-
-.text-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: left; }
-  .text-box__heading {
-    font-size: 2.6rem;
-    font-family: "SCoreDream", sans-serif;
+    justify-content: flex-start; }
+  .text-list__item {
+    width: 24%;
+    align-self: flex-start;
+    flex-wrap: nowrap;
+    font-size: 1.5rem;
     font-weight: 500;
-    margin-bottom: 2rem;
-    animation: bounce 1s 1s forwards; }
-  .text-box__img {
-    width: 45rem; }
-  .text-box__description {
-    font-size: 2rem;
-    animation: fadeInUp 1.2s 2.5s backwards; }
-    .text-box__description span {
-      display: block; }
+    color: #000;
+    letter-spacing: 0.1rem;
+    font-family: "SCoreDream", sans-serif;
+    padding: 1rem;
+    background-color: #f0e9fb;
+    border-radius: 2rem; }
+    .text-list__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .text-list__text--sub {
+    font-size: 1.4rem; }
+
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100rem;
+  margin: 0 auto; }
+
+.card {
+  width: 23.5%;
+  text-align: left;
+  background-color: #ffffff;
+  color: #6200ee;
+  border-radius: 2rem;
+  padding: 2rem;
+  opacity: 0;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3); }
+  .card__img {
+    width: 40%;
+    margin-bottom: 1rem; }
+  .card__title {
+    font-size: 1.8rem;
+    font-family: "SCoreDream", sans-serif; }
+  .card__description {
+    font-size: 1.5rem; }
+  .card:nth-child(1) {
+    animation: var(--animation) 1s cubic-bezier(0, 0.91, 0, 1.02) forwards;
+    z-index: 4; }
+  .card:nth-child(2) {
+    animation: var(--animation) 1s 0.4s cubic-bezier(0, 0.91, 0, 1.02) forwards;
+    z-index: 3; }
+  .card:nth-child(3) {
+    animation: var(--animation) 1s 0.8s cubic-bezier(0, 0.91, 0, 1.02) forwards;
+    z-index: 2; }
+  .card:nth-child(4) {
+    animation: var(--animation) 1s 1.2s cubic-bezier(0, 0.91, 0, 1.02) forwards;
+    z-index: 1; }
+
+.border--white {
+  border-radius: 1rem;
+  border: 0.5rem solid #ffffff;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3); }
+
+.border--purple {
+  border-radius: 1rem;
+  border: 0.5rem solid #eadcff; }
+
+.big-card--purple {
+  transition: all 1s;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  border: 0.5rem solid #b57cff; }
+
+.big-card--gray {
+  padding: 2.5rem;
+  background-color: #eeeeee;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3); }
+
+.big-card__title {
+  font-size: 2rem;
+  margin-bottom: 1rem; }
+  .big-card__title--purple {
+    font-weight: 800;
+    color: #6200ee; }
+  .big-card__title--gray {
+    font-weight: 600;
+    color: #444; }
+
+.big-card__item--purple {
+  font-size: 1.8rem;
+  color: #6200ee;
+  margin: 1rem auto; }
+
+.big-card__item--gray {
+  font-size: 1.6rem;
+  color: #444;
+  margin: 1rem auto; }
 
 .banner {
   padding: 8rem 0;
@@ -409,77 +479,65 @@ body {
     .banner__message--none::after {
       display: none; }
 
-.card-list {
-  display: flex;
-  justify-content: space-between;
-  max-width: 100rem;
-  margin: 0 auto; }
-
-.card {
-  width: 23.5%;
-  text-align: left;
-  background-color: #ffffff;
-  color: #6200ee;
-  border-radius: 2rem;
-  padding: 2rem;
+#banner2 .banner__message {
   opacity: 0;
-  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3); }
-  .card__img {
-    width: 40%;
-    margin-bottom: 1rem; }
-  .card__title {
-    font-size: 1.8rem;
-    font-family: "SCoreDream", sans-serif; }
-  .card__description {
-    font-size: 1.5rem; }
-  .card:nth-child(1) {
-    animation: var(--animation) 1.5s forwards; }
-  .card:nth-child(2) {
-    animation: var(--animation) 1.5s 1.5s forwards; }
-  .card:nth-child(3) {
-    animation: var(--animation) 1.5s 3s forwards; }
-  .card:nth-child(4) {
-    animation: var(--animation) 1.5s 4.5s forwards; }
+  animation: var(--animation) 1s forwards; }
+  #banner2 .banner__message--sub {
+    opacity: 1; }
 
-.border--white {
-  border-radius: 1rem;
-  border: 0.5rem solid #ffffff;
-  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3); }
+.container {
+  padding: 8rem;
+  background-color: #6200ee;
+  text-align: center; }
+  .container--top {
+    padding: 0;
+    padding-top: 8rem; }
+  .container--topless {
+    padding: 0 8rem 8rem 8rem; }
+  .container--secondary {
+    background-color: #f0e9fb; }
+  .container--tertiary {
+    background-color: #3c0092; }
+  .container--white {
+    background-color: #ffffff; }
+  .container__inner {
+    padding: 6rem;
+    text-align: center; }
+  .container__inner--row {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .container__inner--stretch {
+    padding: 0;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; }
+  .container__img-wrap {
+    width: 6rem;
+    align-self: center;
+    margin: 0 3rem; }
+  .container__img {
+    width: 100%; }
 
-.border--purple {
-  border-radius: 1rem;
-  border: 0.5rem solid #eadcff; }
-
-.big-card--purple {
-  padding: 2rem 3rem;
-  border-radius: 1rem;
-  background-color: #ffffff;
-  border: 0.5rem solid #b57cff; }
-
-.big-card--gray {
-  padding: 2.5rem;
-  background-color: #eeeeee;
-  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3); }
-
-.big-card__title {
-  font-size: 2rem;
-  margin-bottom: 1rem; }
-  .big-card__title--purple {
-    font-weight: 800;
-    color: #6200ee; }
-  .big-card__title--gray {
-    font-weight: 600;
-    color: #444; }
-
-.big-card__item--purple {
-  font-size: 1.8rem;
-  color: #6200ee;
-  margin: 1rem auto; }
-
-.big-card__item--gray {
-  font-size: 1.6rem;
-  color: #444;
-  margin: 1rem auto; }
+.text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left; }
+  .text-box__heading {
+    font-size: 2.6rem;
+    font-family: "SCoreDream", sans-serif;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    animation: bounce 1s 2s forwards; }
+  .text-box__img {
+    width: 45rem; }
+  .text-box__description {
+    font-size: 2rem;
+    animation: fadeInUp 1.2s 3s backwards; }
+    .text-box__description span {
+      display: block; }
 
 .section-description {
   display: flex;
