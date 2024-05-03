@@ -228,8 +228,8 @@
             <section class="container container--white" name="service">
                 <div class="container__inner--row">
                     <div class="section-description">
-                        <h2 class="section-description__title section-description__title--box">업무 내용</h2>
-                        <p class="section-description__sub">구독 서비스가 제공하는<br />다양한 업무 내용</p>
+                        <h2 class="section-description__title section-description__title--box">업무 범위</h2>
+                        <p class="section-description__sub">구독 서비스가 제공하는<br />폭넓은 업무 범위</p>
                     </div>
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
@@ -338,7 +338,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="text-list__inner">
+                    <div class="text-list__inner" id="trigger4">
                         <h3 class="text-list__title">마케팅</h3>
                         <ul class="text-list__list">
                             <li class="text-list__item">
@@ -538,7 +538,7 @@
             });
 
         let scene4 = new ScrollMagic.Scene({
-            triggerElement: '#banner2'
+            triggerElement: '#trigger4'
         })
             .setTween(tween4)
             .addTo(controller)

@@ -530,6 +530,7 @@ body {
     font-family: "SCoreDream", sans-serif;
     font-weight: 500;
     margin-bottom: 2rem;
+    opacity: 0;
     animation: bounce 1s 2s forwards; }
   .text-box__img {
     width: 45rem; }
